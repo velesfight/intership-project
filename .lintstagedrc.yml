@@ -1,0 +1,8 @@
+'*.{js,cjs,jsx,ts,tsx}':
+  - eslint --fix
+
+'*.css':
+  - stylelint --fix strict
+
+'*.{js,cjs,jsx,ts,tsx,css,html,json,yml,yaml,md}':
+  - prettier --write

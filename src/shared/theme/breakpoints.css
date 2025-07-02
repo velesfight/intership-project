@@ -1,0 +1,12 @@
+@custom-media --xs-up (width >= 400px);
+@custom-media --sm-up (width >= 576px);
+@custom-media --md-up (width >= 768px);
+@custom-media --lg-up (width >= 992px);
+@custom-media --xl-up (width >= 1200px);
+@custom-media --xxl-up (width >= 1400px);
+@custom-media --xs-down (width < 400px);
+@custom-media --sm-down (width < 576px);
+@custom-media --md-down (width < 768px);
+@custom-media --lg-down (width < 992px);
+@custom-media --xl-down (width < 1200px);
+@custom-media --xxl-down (width < 1400px);
