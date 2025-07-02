@@ -1,0 +1,74 @@
+{
+  "auth": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "chats": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "feed": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "notifications": {},
+  "profile": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "settings": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "shared": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "tests": {
+    "alt": {},
+    "button": {},
+    "label": {},
+    "list": {},
+    "placeholder": {},
+    "text": {},
+    "title": {}
+  },
+  "validation": {
+    "email": {
+      "invalid": "-"
+    },
+    "password": {
+      "tooShort": "-"
+    }
+  }
+}
