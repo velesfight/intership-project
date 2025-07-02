@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "api:generate": "npx swagger-typescript-api generate --path https://example.com/docs-yaml --output src/shared/api/artifacts --name generated.ts --responses --sort-types --sort-routes --axios --unwrap-response-data",
+    "api:generate": "npx swagger-typescript-api generate --path https://dev-back-nude-sdhf43sd5f-v2.ghfls.ru/docs-yaml --output src/shared/api/artifacts --name generated.ts --responses --sort-types --sort-routes --axios --unwrap-response-data",
     "build:prod": "vite build",
     "build:staging": "vite build --mode staging",
     "dev": "vite",
