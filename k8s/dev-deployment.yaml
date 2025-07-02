@@ -2,34 +2,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nude-web
+  name: nude-web-v2
   namespace: dev
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: nude-web
+      app: nude-web-v2
   template:
     metadata:
       labels:
-        app: nude-web
+        app: nude-web-v2
     spec:
       imagePullSecrets:
         - name: regcred
       containers:
-        - name: nude-web
-          image: timeofprogramming/nude_web:__TAG__
+        - name: nude-web-v2
+          image: nexus.ghfls.ru/docker-hosted/nude-web-v2:__TAG__
           ports:
             - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: nude-web
+  name: nude-web-v2
   namespace: dev
 spec:
   selector:
-    app: nude-web
+    app: nude-web-v2
   ports:
     - protocol: TCP
       port: 80
@@ -39,7 +39,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: nude-web-ingress
+  name: nude-web-v2-ingress
   namespace: dev
   annotations:
     kubernetes.io/ingress.class: "nginx"
@@ -48,16 +48,16 @@ metadata:
 spec:
   tls:
     - hosts:
-        - dev.app.nude.web.ghfls.ru
-      secretName: dev-app-nude-web-ghfls-ru-tls
+        - dev.app.nude.web-sgfbefef-v2.ghfls.ru
+      secretName: dev-app-nude-web-sgfbefef-v2-ghfls-ruru-tls
   rules:
-    - host: dev.app.nude.web.ghfls.ru
+    - host: dev.app.nude.web-sgfbefef-v2.ghfls.ru
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: nude-web
+                name: nude-web-v2
                 port:
                   number: 80
