@@ -1,10 +1,6 @@
 # Nude - приложение для романтических знакомств
 
-- [Дев контур](https://dev.app.nude.web-sgfbefef-v2.ghfls.ru/)
-- [Репо](https://gitlab.ghfls.ru/root/nude_web_v2)
-- [Дизайн](https://www.figma.com/design/Zka6UEdIJUzNOim7sNSZtG/Nude-WebApp?node-id=59-1824&t=Pwd9ZAa1oE2GoBSs-0)
-- [Сваггер](https://dev-back-nude-sdhf43sd5f-v2.ghfls.ru/docs)
-- [Описание](https://wiki.yandex.ru/homepage/nude/product-strategy/mvp-1/opisanie-komponentov-nude-web/)
+_Все актуальные ссылки см. в вики_
 
 ## Стэк
 
