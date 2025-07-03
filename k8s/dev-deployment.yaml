@@ -19,6 +19,7 @@ spec:
       containers:
         - name: nude-web-v2
           image: nexus.ghfls.ru/docker-hosted/nude-web-v2:__TAG__
+          imagePullPolicy: Always
           ports:
             - containerPort: 80
 ---
