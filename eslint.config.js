@@ -7,6 +7,7 @@ import perfectionist from 'eslint-plugin-perfectionist';
 import react from 'eslint-plugin-react';
 import * as reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
+import storybook from 'eslint-plugin-storybook';
 import globals from 'globals';
 import path from 'node:path';
 import { config as tsEslintConfig, configs as tsEslintConfigs } from 'typescript-eslint';
@@ -33,6 +34,7 @@ export default tsEslintConfig(
     name: 'import/typescript',
     ...importPlugin.flatConfigs.typescript,
   },
+  storybook.configs['flat/recommended'],
   configPrettier,
   {
     name: 'eslint-plugin-i18n-json',
@@ -130,7 +132,7 @@ export default tsEslintConfig(
   {
     name: 'Nude web: src/',
     files: ['src/**'],
-    ignores: ['src/**/*.d.ts'],
+    ignores: ['src/**/*.d.ts', 'src/**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
     rules: {
       'import/no-default-export': 'error',
     },
