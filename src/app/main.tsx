@@ -1,3 +1,5 @@
+import '@fontsource-variable/geologica';
+
 import '~/shared/configs/i18n';
 import '~/shared/theme/index.css';
 

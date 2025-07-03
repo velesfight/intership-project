@@ -22,6 +22,7 @@
     "typecheck": "tsc -b"
   },
   "dependencies": {
+    "@fontsource-variable/geologica": "^5.2.6",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "i18next": "^25.2.1",

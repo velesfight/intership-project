@@ -1,3 +1,5 @@
+import '@fontsource-variable/geologica';
+
 import '../src/shared/theme/index.css';
 
 import type { Preview } from '@storybook/react-vite';
