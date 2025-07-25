@@ -1,0 +1,7 @@
+.base {
+  color: inherit;
+}
+
+.brand {
+  color: var(--purple-500);
+}
