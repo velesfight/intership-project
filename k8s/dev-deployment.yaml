@@ -18,7 +18,7 @@ spec:
         - name: regcred
       containers:
         - name: nude-web-v2
-          image: nexus.ghfls.ru/docker-hosted/nude-web-v2:__TAG__
+          image: nexus.new.ghfls.ru/repository/docker-hosted/nude-web-v2:__TAG__
           imagePullPolicy: Always
           ports:
             - containerPort: 80
