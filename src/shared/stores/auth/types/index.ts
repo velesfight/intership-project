@@ -16,6 +16,7 @@ export interface TokenPayload {
   email: string;
   role: UserRole;
   status: AuthenticatedUserStatus;
+  exp: number;
 }
 
 export type Guest = {
@@ -27,5 +28,6 @@ export type User = AuthenticatedUser | Guest;
 
 export interface AuthStore {
   accessToken: null | string;
+  tokenExpiry: number;
   user: User;
 }

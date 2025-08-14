@@ -9,6 +9,7 @@ export const useAuthStore = create<AuthStore>()(
     devtools(
       () => ({
         accessToken: null,
+        tokenExpiry: 0,
         user: GUEST,
       }),
       DEVTOOLS_AUTH_NAME,
