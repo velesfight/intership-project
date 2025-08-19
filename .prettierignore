@@ -4,6 +4,7 @@ dist-ssr
 *.local
 package-lock.json
 k8s
+.gitlab/merge_request_templates
 
 # Editor directories and files
 .vscode/*
