@@ -46,12 +46,20 @@
     "title": {}
   },
   "shared": {
-    "alt": {},
+    "alt": {
+      "hintNoticeIcon": "Иконка уведомления",
+      "hintSuccessIcon": "Иконка успеха",
+      "hintWarningIcon": "Иконка предупреждения"
+    },
     "button": {},
     "label": {},
     "list": {},
     "placeholder": {},
-    "text": {},
+    "text": {
+      "hintNotice": "Это уведомление",
+      "hintSuccess": "Это успех",
+      "hintWarning": "Это предупреждение"
+    },
     "title": {}
   },
   "tests": {

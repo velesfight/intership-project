@@ -46,12 +46,20 @@
     "title": {}
   },
   "shared": {
-    "alt": {},
+    "alt": {
+      "hintNoticeIcon": "通知图标",
+      "hintSuccessIcon": "成功图标",
+      "hintWarningIcon": "警告图标"
+    },
     "button": {},
     "label": {},
     "list": {},
     "placeholder": {},
-    "text": {},
+    "text": {
+      "hintNotice": "这是一个通知",
+      "hintSuccess": "这是成功",
+      "hintWarning": "这是一个警告"
+    },
     "title": {}
   },
   "tests": {
