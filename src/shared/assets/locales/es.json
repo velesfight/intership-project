@@ -46,20 +46,12 @@
     "title": {}
   },
   "shared": {
-    "alt": {
-      "hintNoticeIcon": "Icono de aviso",
-      "hintSuccessIcon": "Icono de éxito",
-      "hintWarningIcon": "Icono de advertencia"
-    },
+    "alt": {},
     "button": {},
     "label": {},
     "list": {},
     "placeholder": {},
-    "text": {
-      "hintNotice": "Esto es un aviso",
-      "hintSuccess": "Esto es éxito",
-      "hintWarning": "Esto es una advertencia"
-    },
+    "text": {},
     "title": {}
   },
   "tests": {

@@ -46,20 +46,12 @@
     "title": {}
   },
   "shared": {
-    "alt": {
-      "hintNoticeIcon": "Notice icon",
-      "hintSuccessIcon": "Success icon",
-      "hintWarningIcon": "Warning icon"
-    },
+    "alt": {},
     "button": {},
     "label": {},
     "list": {},
     "placeholder": {},
-    "text": {
-      "hintNotice": "This is a notice",
-      "hintSuccess": "This is success",
-      "hintWarning": "This is a warning"
-    },
+    "text": {},
     "title": {}
   },
   "tests": {
