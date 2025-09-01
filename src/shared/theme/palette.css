@@ -125,10 +125,10 @@
   --background-2: var(--base-25);
   --background-3: var(--base-50);
   --background-4: var(--base-100);
-  --border-1: var(--base-100);
-  --border-2: var(--base-200);
-  --border-3: var(--base-300);
-  --border-4: var(--purple-500);
+  --border-color-1: var(--base-100);
+  --border-color-2: var(--base-200);
+  --border-color-3: var(--base-300);
+  --border-color-4: var(--purple-500);
   --success: var(--green-500);
   --alert: var(--yellow-500);
   --error: var(--red-500);

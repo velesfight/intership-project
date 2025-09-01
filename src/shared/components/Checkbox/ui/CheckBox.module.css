@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  gap: var(--space-4);
+}
+
+.checkbox {
+  display: flex;
+  gap: var(--space-4);
+  user-select: none;
+  align-items: center;
+}
+
+.icon {
+  border: var(--border-2) solid var(--border-color-2);
+  border-radius: var(--radius-4);
+  background-color: var(--background-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invalid {
+  border-color: var(--error);
+}
+
+.checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.sm {
+  inline-size: 16px;
+  block-size: 16px;
+}
+
+.md {
+  inline-size: 20px;
+  block-size: 20px;
+}
+
+.lg {
+  inline-size: 24px;
+  block-size: 24px;
+}
