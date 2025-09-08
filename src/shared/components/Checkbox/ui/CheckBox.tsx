@@ -3,7 +3,6 @@ import { FC, useId } from 'react';
 
 import CheckBoxIcon from '~/shared/assets/icons/checkbox.svg';
 import { Text } from '~/shared/components/Text';
-// TODO: add Hint when it's ready
 
 import { DEFAULT_SIZE } from '../constants';
 import { CheckBoxProps } from '../types';
@@ -12,7 +11,7 @@ import styles from './CheckBox.module.css';
 export const CheckBox: FC<CheckBoxProps> = ({
   size = DEFAULT_SIZE,
   hint,
-  children,
+  label,
   className,
   checked,
   invalid,
@@ -21,11 +20,13 @@ export const CheckBox: FC<CheckBoxProps> = ({
 }) => {
   const classes = clsx(styles.wrapper, className, disabled && styles.disabled);
 
+  const inputId = useId();
+
   return (
     <div className={classes}>
       <label className={styles.checkbox}>
         <input
-          id={useId()}
+          id={inputId}
           type='checkbox'
           className={clsx(styles.control, 'hidden')}
           checked={checked}
@@ -41,8 +42,9 @@ export const CheckBox: FC<CheckBoxProps> = ({
           )}
           aria-hidden
         />
-        <Text variant='text2'>{children}</Text>
+        <Text variant='text2'>{label}</Text>
       </label>
+      {/* TODO: add Hint when it's ready */}
     </div>
   );
 };

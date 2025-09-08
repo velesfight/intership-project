@@ -4,6 +4,7 @@ export type CheckBoxSize = 'sm' | 'md' | 'lg';
 
 export interface CheckBoxProps extends Omit<ComponentProps<'input'>, 'size'> {
   size?: CheckBoxSize;
+  label: string;
   hint?: string;
-  invalid?: string;
+  invalid?: boolean;
 }

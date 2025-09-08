@@ -12,8 +12,7 @@ const meta: Meta<CheckBoxProps> = {
     layout: 'centered',
   },
   argTypes: {
-    children: { control: 'text', defaultValue: 'Я подтверждаю, что мне есть 18 лет' },
-
+    label: { control: 'text' },
     size: {
       control: 'select',
       options: ['sm', 'md', 'lg'],
@@ -32,13 +31,13 @@ type Story = StoryObj<CheckBoxProps>;
 
 export const Default: Story = {
   args: {
-    children: 'Я подтверждаю, что мне есть 18 лет',
+    label: 'Я подтверждаю, что мне есть 18 лет',
   },
 };
 
 export const WithHint: Story = {
   args: {
-    children: 'Я подтверждаю, что мне есть 18 лет',
+    label: 'Я подтверждаю, что мне есть 18 лет',
     hint: 'Вам должно быть 18 лет',
   },
 };
