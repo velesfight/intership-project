@@ -1,0 +1,26 @@
+.block {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.default {
+  color: var(--base-400);
+}
+
+.warning {
+  color: var(--yellow-400);
+}
+
+.error {
+  color: var(--red-400);
+}
+
+.success {
+  color: var(--green-500);
+}
+
+.icon {
+  inline-size: 14px;
+  flex-shrink: 0;
+}

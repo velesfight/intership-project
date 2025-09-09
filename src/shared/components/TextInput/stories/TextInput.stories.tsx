@@ -38,6 +38,7 @@ export const Default: Story = {
     type: 'email',
     value: 'username@gmail.com',
     placeholder: 'Введите значение',
+    hint: 'Hint',
     endIcon: <Succes />,
     disabled: false,
     hideLabel: false,

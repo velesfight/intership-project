@@ -2,6 +2,7 @@ import { clsx } from 'clsx';
 import { FC, useId } from 'react';
 
 import CheckBoxIcon from '~/shared/assets/icons/checkbox.svg';
+import { Hint } from '~/shared/components/Hint';
 import { Text } from '~/shared/components/Text';
 
 import { DEFAULT_SIZE } from '../constants';
@@ -28,7 +29,7 @@ export const CheckBox: FC<CheckBoxProps> = ({
         <input
           id={inputId}
           type='checkbox'
-          className={clsx(styles.control, 'hidden')}
+          className='hidden'
           checked={checked}
           disabled={disabled}
           {...props}
@@ -44,7 +45,7 @@ export const CheckBox: FC<CheckBoxProps> = ({
         />
         <Text variant='text2'>{label}</Text>
       </label>
-      {/* TODO: add Hint when it's ready */}
+      {hint && <Hint variant={invalid ? 'error' : 'default'}>{hint}</Hint>}
     </div>
   );
 };

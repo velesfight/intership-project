@@ -1,6 +1,7 @@
 import { clsx } from 'clsx';
 import { FC, useId } from 'react';
 
+import { Hint } from '~/shared/components/Hint';
 import { Text } from '~/shared/components/Text';
 
 import { DEFAULT_TYPE } from '../constants';
@@ -20,7 +21,7 @@ export const TextInput: FC<TextInputProps> = ({
   className,
   ...props
 }) => {
-  const classes = clsx(className, disabled && styles.disabled);
+  const classes = clsx(styles.wrapper, className, disabled && styles.disabled);
 
   const inputId = useId();
 
@@ -45,7 +46,7 @@ export const TextInput: FC<TextInputProps> = ({
           )}
         </div>
       </label>
-      {/* TODO: add Hint when it's ready */}
+      {hint && <Hint variant={invalid ? 'error' : 'default'}>{hint}</Hint>}
     </div>
   );
 };
