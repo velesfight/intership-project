@@ -31,5 +31,10 @@
       "~/*": ["./*"]
     }
   },
-  "include": ["src", "src/shared/assets/locales/*.json", ".storybook/**/*.ts"]
+  "include": [
+    "src",
+    "src/shared/assets/locales/*.json",
+    ".storybook/**/*.ts",
+    ".storybook/**/*.tsx"
+  ]
 }
