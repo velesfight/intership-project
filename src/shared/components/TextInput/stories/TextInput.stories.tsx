@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Succes from '~/shared/assets/icons/success.svg';
+import Success from '~/shared/assets/icons/success.svg';
 
 import type { TextInputProps } from '../types';
 
@@ -22,7 +22,7 @@ const meta: Meta<TextInputProps> = {
   argTypes: {
     type: {
       control: 'select',
-      options: ['text', 'email', 'search', 'tel', 'url', 'number'],
+      options: ['text', 'email', 'search', 'tel', 'url', 'number', 'password'],
       defaultValue: 'text',
     },
   },
@@ -39,7 +39,20 @@ export const Default: Story = {
     value: 'username@gmail.com',
     placeholder: 'Введите значение',
     hint: 'Hint',
-    endIcon: <Succes />,
+    endIcon: <Success />,
+    disabled: false,
+    hideLabel: false,
+    invalid: false,
+  },
+};
+
+export const Password: Story = {
+  args: {
+    label: 'Пароль',
+    type: 'password',
+    value: 'password',
+    placeholder: 'Введите пароль',
+    hint: 'Hint',
     disabled: false,
     hideLabel: false,
     invalid: false,

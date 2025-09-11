@@ -47,7 +47,10 @@
   },
   "shared": {
     "alt": {},
-    "button": {},
+    "button": {
+      "hidePassword": "Masquer le mot de passe",
+      "showPassword": "Afficher le mot de passe"
+    },
     "label": {},
     "list": {},
     "placeholder": {},

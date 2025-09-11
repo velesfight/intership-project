@@ -1,6 +1,9 @@
 import { clsx } from 'clsx';
-import { FC, useId } from 'react';
+import { FC, useId, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
+import EyeSlash from '~/shared/assets/icons/eye-slash.svg';
+import Eye from '~/shared/assets/icons/eye.svg';
 import { Hint } from '~/shared/components/Hint';
 import { Text } from '~/shared/components/Text';
 
@@ -22,8 +25,18 @@ export const TextInput: FC<TextInputProps> = ({
   ...props
 }) => {
   const classes = clsx(styles.wrapper, className, disabled && styles.disabled);
+  const [showPassword, setShowPassword] = useState(false);
 
+  const { t } = useTranslation('shared');
   const inputId = useId();
+
+  const isPassword = type === 'password';
+  const PasswordIcon = showPassword ? <Eye /> : <EyeSlash />;
+  const inputType = isPassword && showPassword ? 'text' : type;
+
+  const handleClick = () => {
+    setShowPassword(!showPassword);
+  };
 
   return (
     <div className={classes}>
@@ -32,17 +45,23 @@ export const TextInput: FC<TextInputProps> = ({
         <div className={clsx(styles.input, invalid && styles.invalid)}>
           <input
             id={inputId}
-            type={type}
+            type={inputType}
             value={value}
-            className={styles.control}
+            className={clsx(styles.control, isPassword && styles.password)}
             disabled={disabled}
             aria-invalid={invalid}
             {...props}
           />
-          {endIcon && (
-            <span className={styles.icon} aria-hidden>
-              {endIcon}
-            </span>
+          {isPassword ? (
+            <button
+              onClick={handleClick}
+              className={styles.button}
+              aria-label={showPassword ? t('button.hidePassword') : t('button.showPassword')}
+            >
+              <span className={styles.icon}>{PasswordIcon}</span>
+            </button>
+          ) : (
+            endIcon && <span className={styles.icon}>{endIcon}</span>
           )}
         </div>
       </label>

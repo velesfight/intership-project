@@ -47,7 +47,7 @@
   },
   "shared": {
     "alt": {},
-    "button": {},
+    "button": { "hidePassword": "Скрыть пароль", "showPassword": "Показать пароль" },
     "label": {},
     "list": {},
     "placeholder": {},

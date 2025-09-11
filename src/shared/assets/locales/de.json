@@ -47,7 +47,7 @@
   },
   "shared": {
     "alt": {},
-    "button": {},
+    "button": { "hidePassword": "Passwort verbergen", "showPassword": "Passwort anzeigen" },
     "label": {},
     "list": {},
     "placeholder": {},

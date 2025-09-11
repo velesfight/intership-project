@@ -47,7 +47,7 @@
   },
   "shared": {
     "alt": {},
-    "button": {},
+    "button": { "hidePassword": "隱藏密碼", "showPassword": "顯示密碼" },
     "label": {},
     "list": {},
     "placeholder": {},
