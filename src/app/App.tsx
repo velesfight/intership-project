@@ -1,7 +1,11 @@
 import { LocaleProvider } from '~/shared/configs/i18n';
 
-const text = 'Hello world!';
+import { Router } from './Router';
 
 export const App = () => {
-  return <LocaleProvider>{text}</LocaleProvider>;
+  return (
+    <LocaleProvider>
+      <Router />
+    </LocaleProvider>
+  );
 };
