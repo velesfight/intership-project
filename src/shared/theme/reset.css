@@ -12,6 +12,7 @@ body {
   line-height: normal;
   overflow-wrap: anywhere;
   min-block-size: 100vh;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ul,
