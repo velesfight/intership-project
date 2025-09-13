@@ -10,11 +10,8 @@ import { DEFAULT_VARIANT, DEFAULT_SIZE, DEFAULT_ICON_SIDE } from '../constants';
 import { Button } from '../ui';
 
 const meta: Meta<ButtonProps> = {
-  title: 'Shared/Button',
+  title: 'shared/Button',
   component: Button,
-  parameters: {
-    layout: 'centered',
-  },
   decorators: [
     (Story) => (
       <MemoryRouter>
@@ -23,7 +20,10 @@ const meta: Meta<ButtonProps> = {
     ),
   ],
   argTypes: {
-    children: { control: 'text', defaultValue: 'Click' },
+    as: {
+      control: 'select',
+      options: ['button', 'a', 'Link'],
+    },
     variant: {
       control: 'select',
       options: [
@@ -36,29 +36,30 @@ const meta: Meta<ButtonProps> = {
         'transparentWhite',
         'semiGray',
       ],
-      defaultValue: DEFAULT_VARIANT,
     },
     size: {
       control: 'select',
-      options: ['lg', 'md', 'sm', 'xs'],
-      defaultValue: DEFAULT_SIZE,
+      options: ['xs', 'sm', 'md', 'lg'],
     },
-    icon: { control: false },
+    icon: {
+      control: 'select',
+      options: [undefined, 'LockIcon'],
+      mapping: {
+        LockIcon: <LockIcon />,
+      },
+    },
     iconSide: {
       control: 'inline-radio',
       options: ['start', 'end'],
-      defaultValue: DEFAULT_ICON_SIDE,
-    },
-    as: {
-      control: 'select',
-      options: ['button', 'a', 'Link'],
-      defaultValue: 'button',
     },
     loading: {
       control: 'boolean',
       if: { arg: 'as', eq: 'button' },
     },
-    disabled: { control: 'boolean' },
+    disabled: {
+      control: 'boolean',
+      if: { arg: 'as', eq: 'button' },
+    },
   },
 };
 
@@ -66,17 +67,16 @@ export default meta;
 
 type Story = StoryObj<ButtonProps>;
 
-export const PlainTextButton: Story = {
+export const Default: Story = {
   args: {
     children: 'Зарегистрироваться',
     as: 'button',
-  },
-};
-
-export const IconButton: Story = {
-  args: {
-    children: 'Plain text',
-    icon: <LockIcon />,
-    as: 'button',
+    variant: DEFAULT_VARIANT,
+    size: DEFAULT_SIZE,
+    icon: undefined,
+    iconSide: DEFAULT_ICON_SIDE,
+    fullWidth: false,
+    loading: false,
+    disabled: false,
   },
 };

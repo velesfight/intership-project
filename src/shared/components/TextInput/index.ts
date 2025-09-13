@@ -1,2 +1,2 @@
-export * from './ui';
-export * from './types';
+export { TextInput } from './ui';
+export type { TextInputProps } from './types';

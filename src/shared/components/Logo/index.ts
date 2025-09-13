@@ -1,2 +1,2 @@
-export * from './ui';
-export * from './types';
+export { Logo } from './ui';
+export type { LogoProps } from './types';

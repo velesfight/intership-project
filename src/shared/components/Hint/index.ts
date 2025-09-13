@@ -1,2 +1,2 @@
-export * from './ui';
-export * from './types';
+export { Hint } from './ui';
+export type { HintProps } from './types';

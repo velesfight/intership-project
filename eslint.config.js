@@ -101,7 +101,7 @@ export default tsEslintConfig(
       'perfectionist/sort-imports': ['error', { type: 'natural', order: 'asc' }],
       'react/jsx-curly-brace-presence': 'error',
       'react/jsx-newline': ['error', { prevent: true }],
-      'react/jsx-no-literals': 'warn',
+      'react/jsx-no-literals': 'error',
       'react/jsx-no-useless-fragment': 'error',
       'react/prop-types': 'off',
       'react/self-closing-comp': 'error',

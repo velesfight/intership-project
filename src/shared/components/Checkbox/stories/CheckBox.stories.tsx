@@ -1,27 +1,30 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
+import { useArgs } from 'storybook/internal/preview-api';
+
 import type { CheckBoxProps } from '../types';
 
 import { DEFAULT_SIZE } from '../constants';
 import { CheckBox } from '../ui';
 
 const meta: Meta<CheckBoxProps> = {
-  title: 'Shared/CheckBox',
+  title: 'shared/CheckBox',
   component: CheckBox,
-  parameters: {
-    layout: 'centered',
-  },
   argTypes: {
-    label: { control: 'text' },
     size: {
       control: 'select',
       options: ['sm', 'md', 'lg'],
-      defaultValue: DEFAULT_SIZE,
     },
-    hint: { control: 'text', defaultValue: '' },
-    disabled: { control: 'boolean' },
-    checked: { control: 'boolean' },
-    invalid: { control: 'boolean' },
+  },
+  render: (args) => {
+    const [{ checked }, updateArgs] = useArgs();
+    return (
+      <CheckBox
+        {...args}
+        checked={checked}
+        onChange={(event) => updateArgs({ checked: event.target.checked })}
+      />
+    );
   },
 };
 
@@ -32,12 +35,10 @@ type Story = StoryObj<CheckBoxProps>;
 export const Default: Story = {
   args: {
     label: 'Я подтверждаю, что мне есть 18 лет',
-  },
-};
-
-export const WithHint: Story = {
-  args: {
-    label: 'Я подтверждаю, что мне есть 18 лет',
     hint: 'Вам должно быть 18 лет',
+    size: DEFAULT_SIZE,
+    checked: false,
+    invalid: false,
+    disabled: false,
   },
 };

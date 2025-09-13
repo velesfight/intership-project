@@ -1,14 +1,16 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
+import { DEFAULT_ELEMENT, DEFAULT_VARIANT } from '../constants';
 import { Text } from '../ui';
 
 const meta: Meta<typeof Text> = {
   title: 'shared/Text',
   component: Text,
-  parameters: {
-    layout: 'centered',
-  },
   argTypes: {
+    as: {
+      control: { type: 'select' },
+      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span'],
+    },
     variant: {
       control: { type: 'select' },
       options: [
@@ -26,6 +28,7 @@ const meta: Meta<typeof Text> = {
     color: {
       control: { type: 'select' },
       options: [
+        undefined,
         'primary',
         'secondary',
         'content1',
@@ -38,56 +41,21 @@ const meta: Meta<typeof Text> = {
     },
     weight: {
       control: { type: 'select' },
-      options: [400, 500, 600, 700],
-    },
-    as: {
-      control: { type: 'select' },
-      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span'],
+      options: [undefined, 400, 500, 600, 700],
     },
   },
 };
 
 export default meta;
+
 type Story = StoryObj<typeof Text>;
 
-export const TextDe: Story = {
+export const Default: Story = {
   args: {
-    variant: 'text1',
-    children: 'Alle Menschen sind frei und gleich an Würde und Rechten geboren.',
-  },
-};
-
-export const TextEn: Story = {
-  args: {
-    variant: 'text1',
-    children: 'Whereas disregard and contempt for human rights have resulted.',
-  },
-};
-
-export const TextEs: Story = {
-  args: {
-    variant: 'text1',
-    children: 'Todos los seres humanos nacen libres e iguales en dignidad y derechos.',
-  },
-};
-
-export const TextFr: Story = {
-  args: {
-    variant: 'text1',
-    children: 'Tous les êtres humains naissent libres et égaux en dignité et en droits.',
-  },
-};
-
-export const TextRu: Story = {
-  args: {
-    variant: 'text1',
     children: 'Принимая во внимание, что пренебрежение и презрение к правам человека.',
-  },
-};
-
-export const TextZh: Story = {
-  args: {
-    variant: 'text1',
-    children: '任何人不得使为奴隶或奴役 人人生而自由 人人有权享有生命、自由和人身安全.',
+    as: DEFAULT_ELEMENT,
+    variant: DEFAULT_VARIANT,
+    color: undefined,
+    weight: undefined,
   },
 };

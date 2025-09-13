@@ -76,32 +76,30 @@ _Все актуальные ссылки см. в вики_
 Component/
   api/
     index.ts
-    useApiHook.ts
+    useUploadPhoto.ts
   lib/
-    someFunction.ts
-    someOtherFunction.ts
+    formatName.ts
+    mapPhotos.ts
     index.ts
   hooks/
     index.ts
-    useHook.ts
+    useDebounce.ts
   model/
-    index.ts
+    index.ts # e.g. validation schemas
   constants/
     index.ts
   types/
     index.ts
+  stories/
+    Component.stories.ts
   components/
     InnerComponent/
-      ui/
-        InnerComponent.tsx
-        InnerComponent.module.css
-        index.ts
-      index.ts
+      # внутри та же структура
   ui/
     Component.tsx
     Component.module.css
     index.ts
-  index.ts
+  index.ts # публичный интерфейс, импорт внешним кодом только отсюда, не экспортировать все `*`
 ```
 
 ### CSS переменные

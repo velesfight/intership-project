@@ -1,20 +1,20 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 
-import Success from '~/shared/assets/icons/success.svg';
+import { useArgs } from 'storybook/internal/preview-api';
+
+import SuccessIcon from '~/shared/assets/icons/success.svg';
 
 import type { TextInputProps } from '../types';
 
+import { DEFAULT_TYPE } from '../constants';
 import { TextInput } from '../ui';
 
 const meta: Meta<TextInputProps> = {
-  title: 'Shared/TextInput',
+  title: 'shared/TextInput',
   component: TextInput,
-  parameters: {
-    layout: 'centered',
-  },
   decorators: [
     (Story) => (
-      <div style={{ width: '300px' }}>
+      <div style={{ width: 300 }}>
         <Story />
       </div>
     ),
@@ -22,9 +22,25 @@ const meta: Meta<TextInputProps> = {
   argTypes: {
     type: {
       control: 'select',
-      options: ['text', 'email', 'search', 'tel', 'url', 'number', 'password'],
-      defaultValue: 'text',
+      options: ['text', 'password', 'email', 'search', 'tel', 'url', 'number'],
     },
+    endIcon: {
+      control: 'select',
+      options: [undefined, 'SuccessIcon'],
+      mapping: {
+        SuccessIcon: <SuccessIcon />,
+      },
+    },
+  },
+  render: (args) => {
+    const [{ value }, updateArgs] = useArgs();
+    return (
+      <TextInput
+        {...args}
+        value={value}
+        onChange={(event) => updateArgs({ value: event.target.value })}
+      />
+    );
   },
 };
 
@@ -34,27 +50,28 @@ type Story = StoryObj<TextInputProps>;
 
 export const Default: Story = {
   args: {
+    type: DEFAULT_TYPE,
     label: 'Название поля',
-    type: 'email',
-    value: 'username@gmail.com',
-    placeholder: 'Введите значение',
-    hint: 'Hint',
-    endIcon: <Success />,
-    disabled: false,
+    placeholder: '',
+    value: '',
+    hint: '',
+    endIcon: undefined,
     hideLabel: false,
     invalid: false,
+    disabled: false,
   },
 };
 
-export const Password: Story = {
+export const Filled: Story = {
   args: {
-    label: 'Пароль',
-    type: 'password',
-    value: 'password',
-    placeholder: 'Введите пароль',
-    hint: 'Hint',
-    disabled: false,
+    type: DEFAULT_TYPE,
+    label: 'Название поля',
+    placeholder: 'Введите значение',
+    value: 'Введенный текст',
+    hint: 'Текст подсказки',
+    endIcon: 'SuccessIcon',
     hideLabel: false,
     invalid: false,
+    disabled: false,
   },
 };
