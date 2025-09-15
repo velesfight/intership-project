@@ -9,6 +9,7 @@ export default {
           cleanupNumericValues: {
             floatPrecision: 2,
           },
+          cleanupIds: false,
         },
       },
     },
