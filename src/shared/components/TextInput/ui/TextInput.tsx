@@ -13,7 +13,6 @@ import styles from './TextInput.module.css';
 
 export const TextInput: FC<TextInputProps> = ({
   label,
-  placeholder,
   hint,
   type = DEFAULT_TYPE,
   value,

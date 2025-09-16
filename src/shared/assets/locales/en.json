@@ -1,12 +1,29 @@
 {
   "auth": {
     "alt": {},
-    "button": {},
-    "label": {},
+    "button": {
+      "hidePassword": "Hide password",
+      "showPassword": "Show password",
+      "signIn": "Sign In"
+    },
+    "label": {
+      "email": "Email",
+      "password": "Password"
+    },
     "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
+    "placeholder": {
+      "enterEmail": "Enter email",
+      "enterPassword": "Enter password"
+    },
+    "text": {
+      "agreement": "<span>By continuing, you agree to the </span><link1>Privacy Policy</link1><span> and the </span><link2>Cookie Policy</link2><span> , and also accept </span><link3>the Terms of Service.</link3>",
+      "forgotPassword": "Forgot password",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up"
+    },
+    "title": {
+      "signInForm": "Sign In"
+    }
   },
   "chats": {
     "alt": {},
@@ -47,7 +64,7 @@
   },
   "shared": {
     "alt": {},
-    "button": { "hidePassword": "Hide password", "showPassword": "Show password" },
+    "button": {},
     "label": {},
     "list": {},
     "placeholder": {},

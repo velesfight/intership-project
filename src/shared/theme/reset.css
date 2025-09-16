@@ -22,10 +22,10 @@ ol {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none currentcolor;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: underline currentcolor;
   }
 }
 

@@ -1,12 +1,29 @@
 {
   "auth": {
     "alt": {},
-    "button": {},
-    "label": {},
+    "button": {
+      "hidePassword": "隐藏密码",
+      "showPassword": "显示密码",
+      "signIn": "登录"
+    },
+    "label": {
+      "email": "邮箱",
+      "password": "密码"
+    },
     "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
+    "placeholder": {
+      "enterEmail": "请输入邮箱",
+      "enterPassword": "请输入密码"
+    },
+    "text": {
+      "agreement": "<span>继续即表示您同意</span><link1>隐私政策</link1><span>和</span><link2>Cookie政策</link2><span>，并接受</span><link3>服务条款</link3>",
+      "forgotPassword": "忘记密码",
+      "noAccount": "还没有账户？",
+      "signUp": "注册"
+    },
+    "title": {
+      "signInForm": "登录"
+    }
   },
   "chats": {
     "alt": {},
@@ -47,7 +64,7 @@
   },
   "shared": {
     "alt": {},
-    "button": { "hidePassword": "隱藏密碼", "showPassword": "顯示密碼" },
+    "button": {},
     "label": {},
     "list": {},
     "placeholder": {},

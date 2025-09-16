@@ -1,12 +1,29 @@
 {
   "auth": {
     "alt": {},
-    "button": {},
-    "label": {},
+    "button": {
+      "hidePassword": "Ocultar contraseña",
+      "showPassword": "Mostrar contraseña",
+      "signIn": "Iniciar sesión"
+    },
+    "label": {
+      "email": "Correo electrónico",
+      "password": "Contraseña"
+    },
     "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
+    "placeholder": {
+      "enterEmail": "Introduce tu correo electrónico",
+      "enterPassword": "Introduce tu contraseña"
+    },
+    "text": {
+      "agreement": "<span>Al continuar, acepta la </span><link1>Política de privacidad</link1><span> y la </span><link2>Política de cookies</link2><span> , y también acepta </span><link3>los Términos del servicio.</link3>",
+      "forgotPassword": "¿Olvidaste tu contraseña?",
+      "noAccount": "¿No tienes una cuenta?",
+      "signUp": "Registrarse"
+    },
+    "title": {
+      "signInForm": "Iniciar sesión"
+    }
   },
   "chats": {
     "alt": {},
@@ -47,7 +64,7 @@
   },
   "shared": {
     "alt": {},
-    "button": { "hidePassword": "Ocultar contraseña", "showPassword": "Mostrar contraseña" },
+    "button": {},
     "label": {},
     "list": {},
     "placeholder": {},

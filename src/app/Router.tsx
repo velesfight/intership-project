@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
 
+import { SignInForm } from '~/pages/SignInPage';
 import { AppRoute } from '~/shared/constants/routes';
 
 import { AuthLayout } from './layouts/AuthLayout';
@@ -9,7 +10,7 @@ export const Router = () => (
     <Routes>
       <Route path={AppRoute.Root} element={<Navigate to={AppRoute.SignIn} replace />} />
       <Route element={<AuthLayout />}>
-        <Route path={AppRoute.SignIn} element='Sign In' />
+        <Route path={AppRoute.SignIn} element={<SignInForm />} />
         <Route path={AppRoute.SignUp} element='Sign Up' />
         <Route path={AppRoute.Recover} element='Recover' />
         <Route path={AppRoute.Otp} element='OTP' />

@@ -1,12 +1,29 @@
 {
   "auth": {
     "alt": {},
-    "button": {},
-    "label": {},
+    "button": {
+      "hidePassword": "Скрыть пароль",
+      "showPassword": "Показать пароль",
+      "signIn": "Войти"
+    },
+    "label": {
+      "email": "Email",
+      "password": "Пароль"
+    },
     "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
+    "placeholder": {
+      "enterEmail": "Введите email",
+      "enterPassword": "Введите пароль"
+    },
+    "text": {
+      "agreement": "<span>Продолжая, вы соглашаетесь с </span><link1>политикой конфиденциальности</link1><span> и с </span><link2>политикой использования файлов cookie</link2><span> , а также принимаете </span><link3>условия лицензионного соглашения.</link3>",
+      "forgotPassword": "Восстановить пароль",
+      "noAccount": "Еще нет аккаунта? ",
+      "signUp": "Зарегистрироваться"
+    },
+    "title": {
+      "signInForm": "Войти"
+    }
   },
   "chats": {
     "alt": {},
@@ -47,7 +64,7 @@
   },
   "shared": {
     "alt": {},
-    "button": { "hidePassword": "Скрыть пароль", "showPassword": "Показать пароль" },
+    "button": {},
     "label": {},
     "list": {},
     "placeholder": {},
