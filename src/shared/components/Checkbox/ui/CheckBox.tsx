@@ -25,7 +25,7 @@ export const CheckBox: FC<CheckBoxProps> = ({
 
   return (
     <div className={classes}>
-      <label className={styles.checkbox}>
+      <label className={styles.container}>
         <input
           id={inputId}
           type='checkbox'
@@ -34,15 +34,16 @@ export const CheckBox: FC<CheckBoxProps> = ({
           disabled={disabled}
           {...props}
         />
-        <CheckBoxIcon
+        <span
           className={clsx(
-            styles.icon,
+            styles.checkbox,
             styles[size],
             invalid && styles.invalid,
             checked && styles.checked,
           )}
-          aria-hidden
-        />
+        >
+          <CheckBoxIcon className={clsx(styles.icon, invalid && styles.invalid)} aria-hidden />
+        </span>
         <Text variant='text2'>{label}</Text>
       </label>
       {hint && <Hint variant={invalid ? 'error' : 'default'}>{hint}</Hint>}

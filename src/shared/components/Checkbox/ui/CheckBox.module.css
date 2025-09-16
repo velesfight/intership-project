@@ -5,20 +5,26 @@
   gap: var(--space-4);
 }
 
-.checkbox {
+.container {
   display: flex;
   gap: var(--space-4);
   user-select: none;
   align-items: center;
 }
 
-.icon {
+.checkbox {
   border: var(--border-2) solid var(--border-color-2);
   border-radius: var(--radius-4);
   background-color: var(--background-1);
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  transform: scale(1.35);
+  color: var(--white);
 }
 
 .checked {
@@ -47,4 +53,5 @@
 .lg {
   inline-size: 24px;
   block-size: 24px;
+  border-radius: var(--radius-6);
 }
