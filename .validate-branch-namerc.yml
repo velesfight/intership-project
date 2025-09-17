@@ -1,2 +1,2 @@
-pattern: '^(feat|refactor|bugfix|hotfix|chore|docs)\/[a-z0-9]+(-[a-z0-9]+)*$'
-errorMsg: 'Branch type must be one of: feat, refactor, bugfix, hotfix, chore, docs. Description must be in kebab-case.'
+pattern: '^(feat|fix|hotfix|refactor|chore|test|style|perf|docs|build|ci|revert|release|experiment)\/[a-z0-9]+(-[a-z0-9]+)*$'
+errorMsg: 'Branch type must be one of: feat, fix, hotfix, refactor, chore, test, style, perf, docs, build, ci, revert, release, experiment. Description must be in kebab-case.'
