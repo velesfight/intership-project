@@ -34,7 +34,7 @@ export const TextInput: FC<TextInputProps> = ({
   const inputType = isPassword && showPassword ? 'text' : type;
 
   const handleClick = () => {
-    setShowPassword(!showPassword);
+    setShowPassword((prev) => !prev);
   };
 
   return (
@@ -53,6 +53,7 @@ export const TextInput: FC<TextInputProps> = ({
           />
           {isPassword ? (
             <button
+              type='button'
               onClick={handleClick}
               className={styles.button}
               aria-label={showPassword ? t('button.hidePassword') : t('button.showPassword')}
