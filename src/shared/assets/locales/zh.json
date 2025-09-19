@@ -68,7 +68,9 @@
     "label": {},
     "list": {},
     "placeholder": {},
-    "text": {},
+    "text": {
+      "progress": "第 {{current}} 步，共 {{total}} 步"
+    },
     "title": {}
   },
   "tests": {

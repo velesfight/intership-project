@@ -68,7 +68,9 @@
     "label": {},
     "list": {},
     "placeholder": {},
-    "text": {},
+    "text": {
+      "progress": "Paso {{current}} de {{total}}"
+    },
     "title": {}
   },
   "tests": {
