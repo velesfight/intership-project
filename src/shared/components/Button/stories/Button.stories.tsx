@@ -4,12 +4,10 @@ import { MemoryRouter } from 'react-router';
 
 import LockIcon from '~/shared/assets/icons/lock.svg';
 
-import type { ButtonProps } from '../types';
-
 import { DEFAULT_VARIANT, DEFAULT_SIZE, DEFAULT_ICON_SIDE } from '../constants';
 import { Button } from '../ui';
 
-const meta: Meta<ButtonProps> = {
+const meta = {
   title: 'shared/Button',
   component: Button,
   decorators: [
@@ -61,13 +59,13 @@ const meta: Meta<ButtonProps> = {
       if: { arg: 'as', eq: 'button' },
     },
   },
-};
+} satisfies Meta<typeof Button>;
 
 export default meta;
 
-type Story = StoryObj<ButtonProps>;
+type Story = StoryObj<typeof Button>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     children: 'Зарегистрироваться',
     as: 'button',
@@ -79,4 +77,4 @@ export const Default: Story = {
     loading: false,
     disabled: false,
   },
-};
+} satisfies Story;

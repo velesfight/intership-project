@@ -2,12 +2,10 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 
 import { useArgs } from 'storybook/internal/preview-api';
 
-import type { CheckBoxProps } from '../types';
-
 import { DEFAULT_SIZE } from '../constants';
 import { CheckBox } from '../ui';
 
-const meta: Meta<CheckBoxProps> = {
+const meta = {
   title: 'shared/CheckBox',
   component: CheckBox,
   argTypes: {
@@ -26,13 +24,13 @@ const meta: Meta<CheckBoxProps> = {
       />
     );
   },
-};
+} satisfies Meta<typeof CheckBox>;
 
 export default meta;
 
-type Story = StoryObj<CheckBoxProps>;
+type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     label: 'Я подтверждаю, что мне есть 18 лет',
     hint: 'Вам должно быть 18 лет',
@@ -41,4 +39,4 @@ export const Default: Story = {
     invalid: false,
     disabled: false,
   },
-};
+} satisfies Story;

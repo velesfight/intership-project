@@ -18,9 +18,9 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     children: 'Это пример текста хинта',
     variant: DEFAULT_VARIANT,
   },
-};
+} satisfies Story;

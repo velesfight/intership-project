@@ -4,12 +4,10 @@ import { useArgs } from 'storybook/internal/preview-api';
 
 import SuccessIcon from '~/shared/assets/icons/success.svg';
 
-import type { TextInputProps } from '../types';
-
 import { DEFAULT_TYPE } from '../constants';
 import { TextInput } from '../ui';
 
-const meta: Meta<TextInputProps> = {
+const meta = {
   title: 'shared/TextInput',
   component: TextInput,
   decorators: [
@@ -42,13 +40,13 @@ const meta: Meta<TextInputProps> = {
       />
     );
   },
-};
+} satisfies Meta<typeof TextInput>;
 
 export default meta;
 
-type Story = StoryObj<TextInputProps>;
+type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     type: DEFAULT_TYPE,
     label: 'Название поля',
@@ -60,18 +58,15 @@ export const Default: Story = {
     invalid: false,
     disabled: false,
   },
-};
+} satisfies Story;
 
-export const Filled: Story = {
+export const Filled = {
   args: {
-    type: DEFAULT_TYPE,
+    ...Default.args,
     label: 'Название поля',
     placeholder: 'Введите значение',
     value: 'Введенный текст',
     hint: 'Текст подсказки',
     endIcon: 'SuccessIcon',
-    hideLabel: false,
-    invalid: false,
-    disabled: false,
   },
-};
+} satisfies Story;

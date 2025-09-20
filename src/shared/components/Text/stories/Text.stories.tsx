@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite';
 import { DEFAULT_ELEMENT, DEFAULT_VARIANT } from '../constants';
 import { Text } from '../ui';
 
-const meta: Meta<typeof Text> = {
+const meta = {
   title: 'shared/Text',
   component: Text,
   argTypes: {
@@ -44,13 +44,13 @@ const meta: Meta<typeof Text> = {
       options: [undefined, 400, 500, 600, 700],
     },
   },
-};
+} satisfies Meta<typeof Text>;
 
 export default meta;
 
 type Story = StoryObj<typeof Text>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     children: 'Принимая во внимание, что пренебрежение и презрение к правам человека.',
     as: DEFAULT_ELEMENT,
@@ -58,4 +58,4 @@ export const Default: Story = {
     color: undefined,
     weight: undefined,
   },
-};
+} satisfies Story;

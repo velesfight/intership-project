@@ -25,8 +25,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Default = {
   args: {
     color: DEFAULT_COLOR,
   },
-};
+} satisfies Story;
