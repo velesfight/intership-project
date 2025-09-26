@@ -1,0 +1,29 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--radius-40);
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.lg {
+  padding-inline: var(--space-4);
+  font-size: 14px;
+  min-inline-size: 24px;
+  min-block-size: 24px;
+}
+
+.md {
+  padding-inline: var(--space-4);
+  font-size: 12px;
+  min-inline-size: 22px;
+  min-block-size: 22px;
+}
+
+.sm {
+  padding-inline: var(--space-4);
+  font-size: 10px;
+  min-inline-size: 20px;
+  min-block-size: 20px;
+}
