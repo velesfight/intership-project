@@ -53,7 +53,6 @@ export const TextInput: FC<TextInputProps> = ({
           />
           {isPassword ? (
             <button
-              type='button'
               onClick={handleClick}
               className={styles.button}
               aria-label={showPassword ? t('button.hidePassword') : t('button.showPassword')}

@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@fontsource-variable/geologica": "^5.2.6",
+    "@radix-ui/react-avatar": "^1.1.10",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
     "i18next": "^25.2.1",
@@ -40,7 +41,7 @@
     "@csstools/postcss-global-data": "^3.0.0",
     "@eslint/js": "^9.27.0",
     "@storybook/react-vite": "^9.0.15",
-    "@types/react": "^19.1.6",
+    "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.5",
     "@vitejs/plugin-react-swc": "^3.10.0",
     "eslint": "^9.27.0",
