@@ -1,0 +1,47 @@
+.topBar {
+  position: fixed;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: var(--topbar-height);
+  z-index: 5;
+}
+
+.navigation {
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  block-size: var(--bottombar-height);
+  inline-size: 100%;
+  z-index: 5;
+}
+
+.main {
+  padding-block: var(--topbar-height) var(--bottombar-height);
+  block-size: 100dvh;
+  overflow: auto;
+}
+
+@media (--md-up) {
+  .navigation {
+    inset-block-start: var(--topbar-height);
+    inset-inline-start: 0;
+    inline-size: var(--sidebar-width);
+    block-size: calc(100dvh - var(--topbar-height));
+  }
+
+  .main {
+    padding-block: calc(var(--topbar-height) + var(--space-12)) 0;
+    padding-inline-start: var(--sidebar-width);
+  }
+}
+
+@media (--xxl-up) {
+  .navigation {
+    inline-size: var(--sidebar-width);
+  }
+
+  .main {
+    padding-block-start: calc(var(--topbar-height) + var(--space-24));
+  }
+}

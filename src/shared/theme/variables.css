@@ -1,0 +1,26 @@
+:root {
+  --max-width-page: 1180px;
+  --topbar-height: 56px;
+  --sidebar-width: 0px;
+  --bottombar-height: 78px;
+}
+
+@media (--sm-up) {
+  :root {
+    --topbar-height: 64px;
+  }
+}
+
+@media (--md-up) {
+  :root {
+    --topbar-height: 88px;
+    --sidebar-width: 92px;
+    --bottombar-height: 0px;
+  }
+}
+
+@media (--xxl-up) {
+  :root {
+    --sidebar-width: 260px;
+  }
+}

@@ -4,6 +4,7 @@ import { SignInForm } from '~/pages/SignInPage';
 import { AppRoute } from '~/shared/constants/routes';
 
 import { AuthGuard } from './AuthGuard';
+import { AppLayout } from './layouts/AppLayout';
 import { AuthLayout } from './layouts/AuthLayout';
 
 export const Router = () => (
@@ -19,13 +20,15 @@ export const Router = () => (
         </Route>
       </Route>
       <Route element={<AuthGuard access='private' />}>
-        <Route index element={<Navigate to={AppRoute.Feed} replace />} />
-        <Route path={AppRoute.Feed} element='Feed' />
+        <Route path={AppRoute.App} element={<AppLayout />}>
+          <Route index element={<Navigate to={AppRoute.Feed} replace />} />
+          <Route path={AppRoute.Feed} element='Feed' />
+          <Route path={AppRoute.Likes} element='Likes' />
+          <Route path={AppRoute.Profile} element='Profile' />
+          <Route path={AppRoute.Chat} element='Chat' />
+          <Route path={AppRoute.Tests} element='Tests' />
+        </Route>
         <Route path={AppRoute.Questionnaire} element='Questionnaire' />
-        <Route path={AppRoute.Likes} element='Likes' />
-        <Route path={AppRoute.Profile} element='Profile' />
-        <Route path={AppRoute.Chat} element='Chat' />
-        <Route path={AppRoute.Tests} element='Tests' />
       </Route>
     </Routes>
   </BrowserRouter>
