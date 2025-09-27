@@ -26,7 +26,7 @@ export const TextInput: FC<TextInputProps> = ({
   const classes = clsx(styles.wrapper, className, disabled && styles.disabled);
   const [showPassword, setShowPassword] = useState(false);
 
-  const { t } = useTranslation('shared');
+  const { t } = useTranslation();
   const inputId = useId();
 
   const isPassword = type === 'password';
@@ -55,7 +55,9 @@ export const TextInput: FC<TextInputProps> = ({
             <button
               onClick={handleClick}
               className={styles.button}
-              aria-label={showPassword ? t('button.hidePassword') : t('button.showPassword')}
+              aria-label={
+                showPassword ? t('auth.button.hidePassword') : t('auth.button.showPassword')
+              }
             >
               <span className={styles.icon}>{PasswordIcon}</span>
             </button>

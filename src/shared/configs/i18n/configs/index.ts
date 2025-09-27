@@ -28,6 +28,11 @@ i18n
       order: ['querystring', 'localStorage', 'cookie', 'navigator', 'htmlTag'],
       caches: ['localStorage', 'cookie'],
     },
+    interpolation: {
+      escapeValue: false, // react already safes from xss
+    },
+    parseMissingKeyHandler: (key) => `[[${key}]]`,
+    debug: import.meta.env.MODE === 'development',
   });
 
 export { i18n };

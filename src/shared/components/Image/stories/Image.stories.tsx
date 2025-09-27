@@ -5,30 +5,29 @@ import { Image } from '../ui';
 const meta = {
   title: 'shared/Image',
   component: Image,
-  decorators: [
-    (Story) => (
-      <div
-        style={{
-          inlineSize: '400px',
-          blockSize: '300px',
-          border: '2px dashed #ccc',
-        }}
-      >
-        <Story />
-      </div>
-    ),
-  ],
   argTypes: {
-    fallbackClassName: {
-      table: {
-        disable: true,
-      },
-    },
+    fallbackClassName: { table: { disable: true } },
+    style: { table: { disable: true } },
     fallback: {
       control: 'select',
-      options: [null, 'test'],
+      options: [null, 'Custom fallback'],
       mapping: {
-        test: 'test',
+        'Custom fallback': (
+          <span
+            style={{
+              display: 'grid',
+              placeItems: 'center',
+              blockSize: '100%',
+              borderRadius: 'inherit',
+              background: 'palegreen',
+              color: '#444',
+              fontSize: 32,
+              fontWeight: 500,
+            }}
+          >
+            Custom fallback
+          </span>
+        ),
       },
     },
   },
@@ -40,8 +39,17 @@ type Story = StoryObj<typeof meta>;
 
 export const Default = {
   args: {
-    src: 'https://placehold.co/400x350',
+    src: 'https://placehold.co/400x350/lightblue/333',
     alt: 'Test image',
     fallback: null,
+  },
+} satisfies Story;
+
+export const Styled = {
+  args: {
+    src: 'https://placehold.co/400x350/lightblue/333',
+    alt: 'Test image',
+    fallback: 'Custom fallback',
+    style: { inlineSize: 400, aspectRatio: 2, borderRadius: 20 },
   },
 } satisfies Story;

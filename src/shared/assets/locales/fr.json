@@ -1,93 +1,88 @@
 {
-  "auth": {
-    "alt": {},
-    "button": {
-      "hidePassword": "Masquer le mot de passe",
-      "showPassword": "Afficher le mot de passe",
-      "signIn": "Se connecter"
+  "translation": {
+    "auth": {
+      "alt": {},
+      "button": {
+        "hidePassword": "Masquer le mot de passe",
+        "showPassword": "Afficher le mot de passe",
+        "signIn": "Se connecter"
+      },
+      "label": {
+        "email": "E-mail",
+        "password": "Mot de passe"
+      },
+      "placeholder": {
+        "enterEmail": "Entrez votre e-mail",
+        "enterPassword": "Entrez votre mot de passe"
+      },
+      "text": {
+        "agreement": "<span>En continuant, vous acceptez la </span><link1>Politique de confidentialité</link1><span> et la </span><link2>Politique des cookies</link2><span> , et vous acceptez également </span><link3>les conditions d'utilisation.</link3>",
+        "forgotPassword": "Mot de passe oublié",
+        "noAccount": "Pas encore de compte ?",
+        "signUp": "S'inscrire"
+      },
+      "title": {
+        "signInForm": "Connexion"
+      }
     },
-    "label": {
-      "email": "E-mail",
-      "password": "Mot de passe"
+    "chats": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "list": {},
-    "placeholder": {
-      "enterEmail": "Entrez votre e-mail",
-      "enterPassword": "Entrez votre mot de passe"
+    "feed": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "text": {
-      "agreement": "<span>En continuant, vous acceptez la </span><link1>Politique de confidentialité</link1><span> et la </span><link2>Politique des cookies</link2><span> , et vous acceptez également </span><link3>les conditions d'utilisation.</link3>",
-      "forgotPassword": "Mot de passe oublié",
-      "noAccount": "Pas encore de compte ?",
-      "signUp": "S'inscrire"
+    "notifications": {},
+    "profile": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {
-      "signInForm": "Connexion"
-    }
-  },
-  "chats": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "feed": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "notifications": {},
-  "profile": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "settings": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "shared": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {
-      "progress": "Étape {{current}} sur {{total}}"
+    "settings": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {}
-  },
-  "tests": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "validation": {
-    "email": {
-      "invalid": "-"
+    "shared": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {
+        "progress": "Étape {{current}} sur {{total}}"
+      },
+      "title": {}
     },
-    "password": {
-      "tooShort": "-"
+    "tests": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
+    },
+    "validation": {
+      "email": {
+        "invalid": "-"
+      },
+      "password": {
+        "tooShort": "-"
+      }
     }
   }
 }

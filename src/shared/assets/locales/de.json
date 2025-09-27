@@ -1,93 +1,88 @@
 {
-  "auth": {
-    "alt": {},
-    "button": {
-      "hidePassword": "Passwort verbergen",
-      "showPassword": "Passwort anzeigen",
-      "signIn": "Anmelden"
+  "translation": {
+    "auth": {
+      "alt": {},
+      "button": {
+        "hidePassword": "Passwort verbergen",
+        "showPassword": "Passwort anzeigen",
+        "signIn": "Anmelden"
+      },
+      "label": {
+        "email": "E-Mail",
+        "password": "Passwort"
+      },
+      "placeholder": {
+        "enterEmail": "E-Mail eingeben",
+        "enterPassword": "Passwort eingeben"
+      },
+      "text": {
+        "agreement": "<span>Indem Sie fortfahren, stimmen Sie der </span><link1>Datenschutzrichtlinie</link1><span> und der </span><link2>Cookie-Richtlinie</link2><span> zu und akzeptieren außerdem </span><link3>die Lizenzbedingungen.</link3>",
+        "forgotPassword": "Passwort vergessen",
+        "noAccount": "Noch kein Konto?",
+        "signUp": "Registrieren"
+      },
+      "title": {
+        "signInForm": "Anmelden"
+      }
     },
-    "label": {
-      "email": "E-Mail",
-      "password": "Passwort"
+    "chats": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "list": {},
-    "placeholder": {
-      "enterEmail": "E-Mail eingeben",
-      "enterPassword": "Passwort eingeben"
+    "feed": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "text": {
-      "agreement": "<span>Indem Sie fortfahren, stimmen Sie der </span><link1>Datenschutzrichtlinie</link1><span> und der </span><link2>Cookie-Richtlinie</link2><span> zu und akzeptieren außerdem </span><link3>die Lizenzbedingungen.</link3>",
-      "forgotPassword": "Passwort vergessen",
-      "noAccount": "Noch kein Konto?",
-      "signUp": "Registrieren"
+    "notifications": {},
+    "profile": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {
-      "signInForm": "Anmelden"
-    }
-  },
-  "chats": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "feed": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "notifications": {},
-  "profile": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "settings": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "shared": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {
-      "progress": "Schritt {{current}} von {{total}}"
+    "settings": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {}
-  },
-  "tests": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "validation": {
-    "email": {
-      "invalid": "-"
+    "shared": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {
+        "progress": "Schritt {{current}} von {{total}}"
+      },
+      "title": {}
     },
-    "password": {
-      "tooShort": "-"
+    "tests": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
+    },
+    "validation": {
+      "email": {
+        "invalid": "-"
+      },
+      "password": {
+        "tooShort": "-"
+      }
     }
   }
 }

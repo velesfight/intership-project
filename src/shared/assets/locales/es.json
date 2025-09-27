@@ -1,93 +1,88 @@
 {
-  "auth": {
-    "alt": {},
-    "button": {
-      "hidePassword": "Ocultar contraseña",
-      "showPassword": "Mostrar contraseña",
-      "signIn": "Iniciar sesión"
+  "translation": {
+    "auth": {
+      "alt": {},
+      "button": {
+        "hidePassword": "Ocultar contraseña",
+        "showPassword": "Mostrar contraseña",
+        "signIn": "Iniciar sesión"
+      },
+      "label": {
+        "email": "Correo electrónico",
+        "password": "Contraseña"
+      },
+      "placeholder": {
+        "enterEmail": "Introduce tu correo electrónico",
+        "enterPassword": "Introduce tu contraseña"
+      },
+      "text": {
+        "agreement": "<span>Al continuar, acepta la </span><link1>Política de privacidad</link1><span> y la </span><link2>Política de cookies</link2><span> , y también acepta </span><link3>los Términos del servicio.</link3>",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "noAccount": "¿No tienes una cuenta?",
+        "signUp": "Registrarse"
+      },
+      "title": {
+        "signInForm": "Iniciar sesión"
+      }
     },
-    "label": {
-      "email": "Correo electrónico",
-      "password": "Contraseña"
+    "chats": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "list": {},
-    "placeholder": {
-      "enterEmail": "Introduce tu correo electrónico",
-      "enterPassword": "Introduce tu contraseña"
+    "feed": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "text": {
-      "agreement": "<span>Al continuar, acepta la </span><link1>Política de privacidad</link1><span> y la </span><link2>Política de cookies</link2><span> , y también acepta </span><link3>los Términos del servicio.</link3>",
-      "forgotPassword": "¿Olvidaste tu contraseña?",
-      "noAccount": "¿No tienes una cuenta?",
-      "signUp": "Registrarse"
+    "notifications": {},
+    "profile": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {
-      "signInForm": "Iniciar sesión"
-    }
-  },
-  "chats": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "feed": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "notifications": {},
-  "profile": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "settings": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "shared": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {
-      "progress": "Paso {{current}} de {{total}}"
+    "settings": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {}
-  },
-  "tests": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "validation": {
-    "email": {
-      "invalid": "-"
+    "shared": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {
+        "progress": "Paso {{current}} de {{total}}"
+      },
+      "title": {}
     },
-    "password": {
-      "tooShort": "-"
+    "tests": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
+    },
+    "validation": {
+      "email": {
+        "invalid": "-"
+      },
+      "password": {
+        "tooShort": "-"
+      }
     }
   }
 }

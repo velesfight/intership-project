@@ -1,93 +1,88 @@
 {
-  "auth": {
-    "alt": {},
-    "button": {
-      "hidePassword": "Скрыть пароль",
-      "showPassword": "Показать пароль",
-      "signIn": "Войти"
+  "translation": {
+    "auth": {
+      "alt": {},
+      "button": {
+        "hidePassword": "Скрыть пароль",
+        "showPassword": "Показать пароль",
+        "signIn": "Войти"
+      },
+      "label": {
+        "email": "Email",
+        "password": "Пароль"
+      },
+      "placeholder": {
+        "enterEmail": "Введите email",
+        "enterPassword": "Введите пароль"
+      },
+      "text": {
+        "agreement": "<span>Продолжая, вы соглашаетесь с </span><link1>политикой конфиденциальности</link1><span> и с </span><link2>политикой использования файлов cookie</link2><span> , а также принимаете </span><link3>условия лицензионного соглашения.</link3>",
+        "forgotPassword": "Восстановить пароль",
+        "noAccount": "Еще нет аккаунта? ",
+        "signUp": "Зарегистрироваться"
+      },
+      "title": {
+        "signInForm": "Войти"
+      }
     },
-    "label": {
-      "email": "Email",
-      "password": "Пароль"
+    "chats": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "list": {},
-    "placeholder": {
-      "enterEmail": "Введите email",
-      "enterPassword": "Введите пароль"
+    "feed": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "text": {
-      "agreement": "<span>Продолжая, вы соглашаетесь с </span><link1>политикой конфиденциальности</link1><span> и с </span><link2>политикой использования файлов cookie</link2><span> , а также принимаете </span><link3>условия лицензионного соглашения.</link3>",
-      "forgotPassword": "Восстановить пароль",
-      "noAccount": "Еще нет аккаунта? ",
-      "signUp": "Зарегистрироваться"
+    "notifications": {},
+    "profile": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {
-      "signInForm": "Войти"
-    }
-  },
-  "chats": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "feed": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "notifications": {},
-  "profile": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "settings": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "shared": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {
-      "progress": "Шаг {{current}} из {{total}}"
+    "settings": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {}
-  },
-  "tests": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "validation": {
-    "email": {
-      "invalid": "-"
+    "shared": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {
+        "progress": "Шаг {{current}} из {{total}}"
+      },
+      "title": {}
     },
-    "password": {
-      "tooShort": "-"
+    "tests": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
+    },
+    "validation": {
+      "email": {
+        "invalid": "-"
+      },
+      "password": {
+        "tooShort": "-"
+      }
     }
   }
 }

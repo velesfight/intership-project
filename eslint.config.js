@@ -137,5 +137,12 @@ export default tsEslintConfig(
       'import/no-default-export': 'error',
     },
   },
+  {
+    name: 'Nude web: stories',
+    files: ['src/**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
+    rules: {
+      'react/jsx-no-literals': 'off',
+    },
+  },
   { name: 'Ignore', ignores: ['dist', 'dist-ssr'] },
 );

@@ -1,93 +1,88 @@
 {
-  "auth": {
-    "alt": {},
-    "button": {
-      "hidePassword": "隐藏密码",
-      "showPassword": "显示密码",
-      "signIn": "登录"
+  "translation": {
+    "auth": {
+      "alt": {},
+      "button": {
+        "hidePassword": "隐藏密码",
+        "showPassword": "显示密码",
+        "signIn": "登录"
+      },
+      "label": {
+        "email": "邮箱",
+        "password": "密码"
+      },
+      "placeholder": {
+        "enterEmail": "请输入邮箱",
+        "enterPassword": "请输入密码"
+      },
+      "text": {
+        "agreement": "<span>继续即表示您同意</span><link1>隐私政策</link1><span>和</span><link2>Cookie政策</link2><span>，并接受</span><link3>服务条款</link3>",
+        "forgotPassword": "忘记密码",
+        "noAccount": "还没有账户？",
+        "signUp": "注册"
+      },
+      "title": {
+        "signInForm": "登录"
+      }
     },
-    "label": {
-      "email": "邮箱",
-      "password": "密码"
+    "chats": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "list": {},
-    "placeholder": {
-      "enterEmail": "请输入邮箱",
-      "enterPassword": "请输入密码"
+    "feed": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "text": {
-      "agreement": "<span>继续即表示您同意</span><link1>隐私政策</link1><span>和</span><link2>Cookie政策</link2><span>，并接受</span><link3>服务条款</link3>",
-      "forgotPassword": "忘记密码",
-      "noAccount": "还没有账户？",
-      "signUp": "注册"
+    "notifications": {},
+    "profile": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {
-      "signInForm": "登录"
-    }
-  },
-  "chats": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "feed": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "notifications": {},
-  "profile": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "settings": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "shared": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {
-      "progress": "第 {{current}} 步，共 {{total}} 步"
+    "settings": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
     },
-    "title": {}
-  },
-  "tests": {
-    "alt": {},
-    "button": {},
-    "label": {},
-    "list": {},
-    "placeholder": {},
-    "text": {},
-    "title": {}
-  },
-  "validation": {
-    "email": {
-      "invalid": "-"
+    "shared": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {
+        "progress": "第 {{current}} 步，共 {{total}} 步"
+      },
+      "title": {}
     },
-    "password": {
-      "tooShort": "-"
+    "tests": {
+      "alt": {},
+      "button": {},
+      "label": {},
+      "placeholder": {},
+      "text": {},
+      "title": {}
+    },
+    "validation": {
+      "email": {
+        "invalid": "-"
+      },
+      "password": {
+        "tooShort": "-"
+      }
     }
   }
 }

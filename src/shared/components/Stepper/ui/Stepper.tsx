@@ -6,7 +6,7 @@ import { StepperProps } from '../types';
 import styles from './Stepper.module.css';
 
 export const Stepper: FC<StepperProps> = ({ steps, current, incomplete, className, ...props }) => {
-  const { t } = useTranslation('shared');
+  const { t } = useTranslation();
   const lastPassed = current - 1;
 
   return (
@@ -24,7 +24,9 @@ export const Stepper: FC<StepperProps> = ({ steps, current, incomplete, classNam
                 isIncomplete && styles.incomplete,
               )}
             />
-            <span className='hidden'>{t('text.progress', { current: i + 1, total: steps })}</span>
+            <span className='hidden'>
+              {t('shared.text.progress', { current: i + 1, total: steps })}
+            </span>
           </div>
         );
       })}
