@@ -1,0 +1,66 @@
+.switchLabel {
+  display: block;
+  border-radius: var(--radius-15);
+  inline-size: fit-content;
+  line-height: 0;
+  cursor: pointer;
+
+  &:has(:focus-visible) {
+    outline: auto;
+    outline-offset: 1px;
+  }
+}
+
+.customSwitch {
+  position: relative;
+  display: inline-block;
+  background-color: hsl(from var(--background-4) h s l / 50%);
+  border-radius: var(--radius-15);
+  transition: background-color 0.15s ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+    border-radius: var(--radius-15);
+    background-color: var(--white);
+    transition: inset-inline-start 0.15s ease;
+  }
+}
+
+.sm {
+  inline-size: 35px;
+  block-size: 20px;
+
+  &::before {
+    inset-inline-start: 2px;
+    inline-size: 15px;
+    block-size: 15px;
+  }
+}
+
+.md {
+  inline-size: 40px;
+  block-size: 24px;
+
+  &::before {
+    inset-inline-start: 3px;
+    inline-size: 18px;
+    block-size: 18px;
+  }
+}
+
+.realSwitch:checked {
+  + .customSwitch {
+    background-color: var(--primary);
+  }
+
+  + .sm::before {
+    inset-inline-start: calc(100% - 2px - 15px);
+  }
+
+  + .md::before {
+    inset-inline-start: calc(100% - 3px - 18px);
+  }
+}
