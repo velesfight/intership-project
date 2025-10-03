@@ -1,7 +1,7 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: clamp(32px, 4vw, 92px);
+  gap: var(--space-32);
 }
 
 .header {
@@ -10,11 +10,11 @@
   align-items: center;
   padding-inline: var(--space-8);
   padding-block: var(--space-12);
-  min-block-size: clamp(56px, 5vw + 32px, 88px);
+  min-block-size: var(--topbar-height);
 }
 
 .logo {
-  inline-size: clamp(96px, 8vw, 140px);
+  inline-size: 96px;
   outline: none;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .background {
-  inline-size: clamp(400px, 80vw, 1049px);
+  inline-size: 400px;
   position: fixed;
   inset-block-end: 0;
   inset-inline-end: 0;
@@ -43,5 +43,31 @@
   .reactangle {
     inset-inline-start: 0;
     inset-block-end: 0;
+  }
+}
+
+@media (--sm-up) {
+  .background {
+    inline-size: 725px;
+  }
+}
+
+@media (--md-up) {
+  .wrapper {
+    gap: var(--space-62);
+  }
+}
+
+@media (--xl-up) {
+  .wrapper {
+    gap: var(--space-92);
+  }
+
+  .logo {
+    inline-size: 121px;
+  }
+
+  .background {
+    inline-size: 1049px;
   }
 }

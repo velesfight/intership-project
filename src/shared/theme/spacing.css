@@ -34,6 +34,7 @@
   --space-62: calc(var(--space-base) * 7.75);
   --space-64: calc(var(--space-base) * 8);
   --space-72: calc(var(--space-base) * 9);
+  --space-92: calc(var(--space-base) * 11.5);
   --space-96: calc(var(--space-base) * 12);
   --space-120: calc(var(--space-base) * 15);
 

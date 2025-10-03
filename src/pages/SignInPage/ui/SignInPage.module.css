@@ -1,49 +1,49 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: clamp(var(--space-12), 2.5vw, var(--space-16));
+  gap: var(--space-12);
 }
 
 .card {
   inline-size: 100%;
   background-color: var(--background-1);
-  padding: clamp(var(--space-6), 1.5vw, var(--space-8));
+  padding: var(--space-6);
   border: var(--border-1) solid var(--border-color-1);
-  border-radius: clamp(var(--space-10), 2vw, var(--space-16));
+  border-radius: var(--space-10);
 }
 
 .label {
   display: flex;
   justify-content: center;
-  padding-inline: clamp(var(--space-16), 3vw, var(--space-22));
+  padding-inline: var(--space-16);
 }
 
 .content {
-  margin-block-start: clamp(var(--space-12), 4vw, var(--space-24));
-  padding-inline: clamp(var(--space-12), 4vw, var(--space-24));
+  margin-block-start: 12px;
+  padding-inline: var(--space-12);
 }
 
 .input {
-  margin-block-start: clamp(var(--space-12), 2vw, var(--space-16));
+  margin-block-start: 12px;
 }
 
 .container {
   display: flex;
   justify-content: flex-end;
-  margin-block-start: clamp(var(--space-4), 1.5vw, var(--space-8));
+  margin-block-start: 4px;
 }
 
 .button {
   color: var(--white);
-  margin-block-start: clamp(var(--space-16), 3vw, var(--space-24));
+  margin-block-start: 16px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: clamp(var(--space-16), 3vw, var(--space-24));
-  gap: clamp(var(--space-8), 2vw, var(--space-12));
+  margin: 16px;
+  gap: var(--space-8);
 }
 
 .agreement {
@@ -56,4 +56,79 @@
 
 .fade {
   opacity: 0.44;
+}
+
+@media (--xs-up) {
+  .content {
+    margin-block-start: 18px;
+    padding-inline: var(--space-18);
+  }
+
+  .container {
+    margin-block-start: 6px;
+  }
+}
+
+@media (--sm-up) {
+  .wrapper {
+    gap: var(--space-14);
+  }
+
+  .card {
+    padding: var(--space-8);
+    border-radius: var(--space-12);
+  }
+
+  .label {
+    padding-inline: var(--space-20);
+  }
+
+  .content {
+    margin-block-start: 24px;
+    padding-inline: var(--space-24);
+  }
+
+  .input {
+    margin-block-start: 14px;
+  }
+
+  .container {
+    margin-block-start: 8px;
+  }
+
+  .button {
+    margin-block-start: 20px;
+  }
+
+  .footer {
+    margin: 20px;
+    gap: var(--space-10);
+  }
+}
+
+@media (--md-up) {
+  .wrapper {
+    gap: var(--space-16);
+  }
+
+  .card {
+    border-radius: var(--space-16);
+  }
+
+  .label {
+    padding-inline: var(--space-22);
+  }
+
+  .input {
+    margin-block-start: 16px;
+  }
+
+  .button {
+    margin-block-start: 24px;
+  }
+
+  .footer {
+    margin: 24px;
+    gap: var(--space-12);
+  }
 }
