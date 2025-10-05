@@ -1,2 +1,1 @@
 export const DEFAULT_API_TIMEOUT = 10000;
-export const SECONDS_TO_MILLISECONDS = 1000;

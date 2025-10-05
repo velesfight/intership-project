@@ -1,7 +1,7 @@
 import { isAxiosError, InternalAxiosRequestConfig } from 'axios';
 
 import { HttpStatus } from '~/shared/constants';
-import { clearAuth, useAuthStore } from '~/shared/stores/auth';
+import { useAppStore, clearAppStore } from '~/shared/stores/app';
 
 import { Api } from '../artifacts';
 import { DEFAULT_API_TIMEOUT } from '../constants';
@@ -18,21 +18,22 @@ export const api = new Api({
   timeout: DEFAULT_API_TIMEOUT,
 });
 
-const requestAuthInterceptor = (config: InternalAxiosRequestConfig) => {
-  const { accessToken, tokenExpiry } = useAuthStore.getState();
+const requestInterceptor = (config: InternalAxiosRequestConfig) => {
+  const { user } = useAppStore.getState();
 
-  if (tokenExpiry <= Date.now()) clearAuth();
-
-  config.headers.Authorization = `Bearer ${accessToken}`;
+  if (user.isAuthenticated) {
+    if (user.tokenExpiry <= Date.now()) clearAppStore();
+    config.headers.Authorization = `Bearer ${user.accessToken}`;
+  }
 
   return config;
 };
 
-const responseAuthInterceptor = (error: unknown) => {
-  if (isAxiosError(error) && error.response?.status === HttpStatus.Unauthorized) clearAuth();
+const responseInterceptor = (error: unknown) => {
+  if (isAxiosError(error) && error.response?.status === HttpStatus.Unauthorized) clearAppStore();
 
   return Promise.reject(error);
 };
 
-api.instance.interceptors.request.use(requestAuthInterceptor);
-api.instance.interceptors.response.use((res) => res, responseAuthInterceptor);
+api.instance.interceptors.request.use(requestInterceptor);
+api.instance.interceptors.response.use((res) => res, responseInterceptor);

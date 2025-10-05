@@ -3,14 +3,6 @@ import { UserRole } from '~/shared/constants/statuses';
 export type AuthenticatedUserStatus = 'verified' | 'incomplete' | 'active' | 'suspended';
 export type GuestStatus = 'guest';
 
-export interface AuthenticatedUser {
-  isAuthenticated: true;
-  id: number;
-  email: string;
-  role: UserRole;
-  status: AuthenticatedUserStatus;
-}
-
 export interface TokenPayload {
   sub: number;
   email: string;
@@ -24,10 +16,18 @@ export type Guest = {
   status: GuestStatus;
 };
 
+export interface AuthenticatedUser {
+  isAuthenticated: true;
+  id: number;
+  email: string;
+  role: UserRole;
+  status: AuthenticatedUserStatus;
+  accessToken: string;
+  tokenExpiry: number;
+}
+
 export type User = AuthenticatedUser | Guest;
 
-export interface AuthStore {
-  accessToken: null | string;
-  tokenExpiry: number;
+export interface AppState {
   user: User;
 }

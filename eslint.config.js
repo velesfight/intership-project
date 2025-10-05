@@ -92,7 +92,7 @@ export default tsEslintConfig(
             {
               name: 'react',
               importNames: ['default'],
-              message: '`React` is globally available.',
+              message: 'Prefer named imports from React instead of default import.',
             },
           ],
         },

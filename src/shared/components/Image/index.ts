@@ -1,2 +1,2 @@
-export * from './ui';
-export * from './types';
+export { Image } from './ui';
+export type { ImageProps } from './types';

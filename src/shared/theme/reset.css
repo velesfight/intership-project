@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  color-scheme: light;
+  scrollbar-color: hsl(from var(--content-2) h s l / 40%) transparent;
+}
+
 body {
   font-family: 'Geologica Variable', sans-serif;
   scroll-behavior: smooth;
@@ -22,10 +27,10 @@ ol {
 
 a {
   color: inherit;
-  text-decoration: none currentcolor;
+  text-decoration: none;
 
   &:hover {
-    text-decoration: underline currentcolor;
+    text-decoration: underline;
   }
 }
 
