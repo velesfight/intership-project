@@ -16,13 +16,17 @@
         "enterPassword": "请输入密码"
       },
       "text": {
-        "agreement": "<span>继续即表示您同意</span><link1>隐私政策</link1><span>和</span><link2>Cookie政策</link2><span>，并接受</span><link3>服务条款</link3>",
+        "agreement": "继续即表示您同意<0>隐私政策</0>和<1>Cookie政策</1>，并接受<2>服务条款</2>",
+        "confirmAge": "我确认我已满18岁",
         "forgotPassword": "忘记密码",
+        "haveAccount": "您已经有账号了吗",
         "noAccount": "还没有账户？",
+        "passwordSize": "必须包含至少8个字符 不超过50个字符",
         "signUp": "注册"
       },
       "title": {
-        "signInForm": "登录"
+        "signIn": "登录",
+        "signUp": "注册"
       }
     },
     "chats": {
@@ -32,6 +36,9 @@
       "placeholder": {},
       "text": {},
       "title": {}
+    },
+    "common": {
+      "next": "下一步"
     },
     "feed": {
       "alt": {},

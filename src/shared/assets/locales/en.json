@@ -16,13 +16,17 @@
         "enterPassword": "Enter password"
       },
       "text": {
-        "agreement": "<span>By continuing, you agree to the </span><link1>Privacy Policy</link1><span> and the </span><link2>Cookie Policy</link2><span> , and also accept </span><link3>the Terms of Service.</link3>",
+        "agreement": "By continuing, you agree to the <0>Privacy Policy</0> and the <1>Cookie Policy</1> , and also accept <2>the Terms of Service.</2>",
+        "confirmAge": "I confirm that I am 18 years old",
         "forgotPassword": "Forgot password",
+        "haveAccount": "Do you already have an account?",
         "noAccount": "Don't have an account?",
+        "passwordSize": "Must contain at least 8 and no more than 50 characters",
         "signUp": "Sign Up"
       },
       "title": {
-        "signInForm": "Sign In"
+        "signIn": "Sign In",
+        "signUp": "Sign Up"
       }
     },
     "chats": {
@@ -32,6 +36,9 @@
       "placeholder": {},
       "text": {},
       "title": {}
+    },
+    "common": {
+      "next": "Next"
     },
     "feed": {
       "alt": {},

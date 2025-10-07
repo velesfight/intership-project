@@ -16,13 +16,17 @@
         "enterPassword": "Passwort eingeben"
       },
       "text": {
-        "agreement": "<span>Indem Sie fortfahren, stimmen Sie der </span><link1>Datenschutzrichtlinie</link1><span> und der </span><link2>Cookie-Richtlinie</link2><span> zu und akzeptieren außerdem </span><link3>die Lizenzbedingungen.</link3>",
+        "agreement": "Indem Sie fortfahren, stimmen Sie der <0>Datenschutzrichtlinie</0> und der <1>Cookie-Richtlinie</1> zu und akzeptieren außerdem <2>die Lizenzbedingungen.</2>",
+        "confirmAge": "Ich bestätige, dass ich 18 Jahre alt bin",
         "forgotPassword": "Passwort vergessen",
+        "haveAccount": "Haben Sie bereits ein Konto?",
         "noAccount": "Noch kein Konto?",
+        "passwordSize": "Muss mindestens 8 und höchstens 50 Zeichen enthalten",
         "signUp": "Registrieren"
       },
       "title": {
-        "signInForm": "Anmelden"
+        "signIn": "Anmelden",
+        "signUp": "Registrierung"
       }
     },
     "chats": {
@@ -32,6 +36,9 @@
       "placeholder": {},
       "text": {},
       "title": {}
+    },
+    "common": {
+      "next": "Weiter"
     },
     "feed": {
       "alt": {},

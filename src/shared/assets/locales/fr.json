@@ -16,13 +16,17 @@
         "enterPassword": "Entrez votre mot de passe"
       },
       "text": {
-        "agreement": "<span>En continuant, vous acceptez la </span><link1>Politique de confidentialité</link1><span> et la </span><link2>Politique des cookies</link2><span> , et vous acceptez également </span><link3>les conditions d'utilisation.</link3>",
+        "agreement": "En continuant, vous acceptez la <0>Politique de confidentialité</0> et la <1>Politique des cookies</1> , et vous acceptez également <2>les conditions d'utilisation.</2>",
+        "confirmAge": "Je confirme que j'ai 18 ans",
         "forgotPassword": "Mot de passe oublié",
+        "haveAccount": "Avez-vous déjà un compte ?",
         "noAccount": "Pas encore de compte ?",
+        "passwordSize": "Doit contenir au moins 8 et au plus 50 caractères",
         "signUp": "S'inscrire"
       },
       "title": {
-        "signInForm": "Connexion"
+        "signIn": "Connexion",
+        "signUp": "Inscription"
       }
     },
     "chats": {
@@ -32,6 +36,9 @@
       "placeholder": {},
       "text": {},
       "title": {}
+    },
+    "common": {
+      "next": "Suivant"
     },
     "feed": {
       "alt": {},

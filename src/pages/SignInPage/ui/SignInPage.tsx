@@ -8,7 +8,7 @@ import { AppRoute } from '~/shared/constants/routes';
 
 import styles from './SignInPage.module.css';
 
-export const SignInForm = () => {
+export const SignInPage = () => {
   const { t } = useTranslation();
 
   return (
@@ -16,7 +16,7 @@ export const SignInForm = () => {
       <div className={styles.card}>
         <div className={styles.content}>
           <Text variant='title2' className={styles.label}>
-            {t('auth.title.signInForm')}
+            {t('auth.title.signIn')}
           </Text>
           <TextInput
             label={t('auth.label.email')}

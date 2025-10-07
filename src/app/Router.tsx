@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
 
-import { SignInForm } from '~/pages/SignInPage';
+import { SignInPage } from '~/pages/SignInPage';
+import { SignUpPage } from '~/pages/SignUpPage';
 import { AppRoute } from '~/shared/constants/routes';
 
 import { AuthGuard } from './AuthGuard';
@@ -13,8 +14,8 @@ export const Router = () => (
       <Route element={<AuthGuard access='public' />}>
         <Route path={AppRoute.Root} element={<Navigate to={AppRoute.SignIn} replace />} />
         <Route element={<AuthLayout />}>
-          <Route path={AppRoute.SignIn} element={<SignInForm />} />
-          <Route path={AppRoute.SignUp} element='Sign Up' />
+          <Route path={AppRoute.SignIn} element={<SignInPage />} />
+          <Route path={AppRoute.SignUp} element={<SignUpPage />} />
           <Route path={AppRoute.Recover} element='Recover' />
           <Route path={AppRoute.Otp} element='OTP' />
         </Route>
