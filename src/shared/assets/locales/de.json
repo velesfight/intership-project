@@ -40,6 +40,7 @@
       }
     },
     "common": {
+      "close": "Schließen",
       "next": "Weiter"
     },
     "feed": {
@@ -52,7 +53,19 @@
         "feed": "Feed"
       }
     },
-    "notifications": {},
+    "notifications": {
+      "dataSaved": {
+        "text1": "Daten gespeichert"
+      },
+      "match": {
+        "text1": "Es ist gegenseitig!",
+        "text2": "Schreib bald"
+      },
+      "unknownError": {
+        "text1": "Etwas ist schiefgelaufen",
+        "text2": "Bitte versuchen Sie es später erneut oder wenden Sie sich an den Support"
+      }
+    },
     "profile": {
       "alt": {},
       "button": {},
@@ -71,7 +84,6 @@
     },
     "shared": {
       "alt": {},
-      "button": {},
       "label": {},
       "placeholder": {},
       "text": {

@@ -40,6 +40,7 @@
       }
     },
     "common": {
+      "close": "Fermer",
       "next": "Suivant"
     },
     "feed": {
@@ -52,7 +53,19 @@
         "feed": "Flux"
       }
     },
-    "notifications": {},
+    "notifications": {
+      "dataSaved": {
+        "text1": "Données enregistrées"
+      },
+      "match": {
+        "text1": "C'est réciproque !",
+        "text2": "Écrivez vite"
+      },
+      "unknownError": {
+        "text1": "Une erreur est survenue",
+        "text2": "Veuillez réessayer plus tard ou contacter le support"
+      }
+    },
     "profile": {
       "alt": {},
       "button": {},
@@ -71,7 +84,6 @@
     },
     "shared": {
       "alt": {},
-      "button": {},
       "label": {},
       "placeholder": {},
       "text": {

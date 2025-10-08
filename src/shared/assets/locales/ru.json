@@ -40,6 +40,7 @@
       }
     },
     "common": {
+      "close": "Закрыть",
       "next": "Далее"
     },
     "feed": {
@@ -52,7 +53,19 @@
         "feed": "Лента"
       }
     },
-    "notifications": {},
+    "notifications": {
+      "dataSaved": {
+        "text1": "Данные сохранены"
+      },
+      "match": {
+        "text1": "Это взаимно!",
+        "text2": "Напишите скорее"
+      },
+      "unknownError": {
+        "text1": "Что-то пошло не так",
+        "text2": "Попробуйте позже или обратитесь в поддержку"
+      }
+    },
     "profile": {
       "alt": {},
       "button": {},
@@ -71,7 +84,6 @@
     },
     "shared": {
       "alt": {},
-      "button": {},
       "label": {},
       "placeholder": {},
       "text": {

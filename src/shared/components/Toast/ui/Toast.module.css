@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding-block: var(--space-16);
+  padding-inline: var(--space-32);
+  padding-inline-start: var(--space-20);
+  gap: var(--space-12);
+  border-radius: var(--radius-20);
+  position: relative;
+  block-size: auto;
+  background-color: var(--background-3);
+  box-shadow:
+    0 2px 8px rgb(var(--black) / 6%),
+    0 8px 16px rgb(var(--black) / 8%);
+}
+
+.success {
+  background-color: var(--green-25);
+}
+
+.successIcon {
+  color: var(--green-500);
+}
+
+.failed {
+  background-color: var(--pink-50);
+}
+
+.failedIcon {
+  color: var(--red-400);
+}
+
+.simpleLike {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.superLike {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.iconContainer {
+  inline-size: 24px;
+  block-size: 24px;
+  flex-shrink: 0;
+}
+
+.iconWrapper {
+  inline-size: 24px;
+  block-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.iconCloseSvg {
+  color: var(--base-600);
+  inline-size: 10px;
+  block-size: 10px;
+}
+
+.iconClose {
+  position: absolute;
+  inset-block-start: var(--space-4);
+  inset-inline-end: var(--space-4);
+  inline-size: 32px;
+  block-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: var(--space-4);
+  inline-size: 224px;
+}

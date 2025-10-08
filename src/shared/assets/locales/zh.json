@@ -40,6 +40,7 @@
       }
     },
     "common": {
+      "close": "關閉",
       "next": "下一步"
     },
     "feed": {
@@ -52,7 +53,19 @@
         "feed": "动态"
       }
     },
-    "notifications": {},
+    "notifications": {
+      "dataSaved": {
+        "text1": "数据已保存"
+      },
+      "match": {
+        "text1": "双方互相喜欢！",
+        "text2": "尽快写信"
+      },
+      "unknownError": {
+        "text1": "出现错误",
+        "text2": "请稍后再试或联系客服"
+      }
+    },
     "profile": {
       "alt": {},
       "button": {},
@@ -71,7 +84,6 @@
     },
     "shared": {
       "alt": {},
-      "button": {},
       "label": {},
       "placeholder": {},
       "text": {

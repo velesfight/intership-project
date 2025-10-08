@@ -40,6 +40,7 @@
       }
     },
     "common": {
+      "close": "Close",
       "next": "Next"
     },
     "feed": {
@@ -52,7 +53,19 @@
         "feed": "Feed"
       }
     },
-    "notifications": {},
+    "notifications": {
+      "dataSaved": {
+        "text1": "Data saved"
+      },
+      "match": {
+        "text1": "It's mutual!",
+        "text2": "Write soon"
+      },
+      "unknownError": {
+        "text1": "Something went wrong",
+        "text2": "Please try again later or contact support"
+      }
+    },
     "profile": {
       "alt": {},
       "button": {},
@@ -71,7 +84,6 @@
     },
     "shared": {
       "alt": {},
-      "button": {},
       "label": {},
       "placeholder": {},
       "text": {
