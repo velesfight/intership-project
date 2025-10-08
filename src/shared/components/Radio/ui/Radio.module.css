@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  inline-size: 125px;
+  block-size: 48px;
+  padding: var(--space-16);
+  border-radius: var(--radius-20);
+  border: var(--border-1) solid var(--border-color-2);
+  gap: var(--space-4);
+  user-select: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.container.checked {
+  border-color: var(--primary);
+  border-width: var(--border-2);
+}
+
+.radio {
+  border: var(--border-2) solid var(--border-color-2);
+  border-radius: var(--radius-4);
+  background-color: var(--background-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  transform: scale(1.35);
+  color: var(--white);
+}
+
+.radio.checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.sm {
+  inline-size: 16px;
+  block-size: 16px;
+  border-radius: 50%;
+}
+
+.md {
+  inline-size: 20px;
+  block-size: 20px;
+  border-radius: 50%;
+}
+
+.lg {
+  inline-size: 24px;
+  block-size: 24px;
+  border-radius: 50%;
+}

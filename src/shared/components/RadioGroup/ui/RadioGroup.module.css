@@ -1,0 +1,12 @@
+.radioGroup {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.radioGroup.vertical {
+  flex-direction: column;
+}
+
+.radioGroup.horizontal {
+  flex-direction: row;
+}
