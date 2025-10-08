@@ -35,7 +35,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "chat": "Chats"
+      }
     },
     "common": {
       "next": "Siguiente"
@@ -46,7 +48,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "feed": "Feed"
+      }
     },
     "notifications": {},
     "profile": {
@@ -81,7 +85,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "tests": "Tests"
+      }
     },
     "validation": {
       "email": {

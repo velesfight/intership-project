@@ -35,7 +35,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "chat": "Чаты"
+      }
     },
     "common": {
       "next": "Далее"
@@ -46,7 +48,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "feed": "Лента"
+      }
     },
     "notifications": {},
     "profile": {
@@ -81,7 +85,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "tests": "Тесты"
+      }
     },
     "validation": {
       "email": {

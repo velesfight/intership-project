@@ -35,7 +35,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "chat": "聊天"
+      }
     },
     "common": {
       "next": "下一步"
@@ -46,7 +48,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "feed": "动态"
+      }
     },
     "notifications": {},
     "profile": {
@@ -81,7 +85,9 @@
       "label": {},
       "placeholder": {},
       "text": {},
-      "title": {}
+      "title": {
+        "tests": "测试"
+      }
     },
     "validation": {
       "email": {
