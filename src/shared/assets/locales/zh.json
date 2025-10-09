@@ -57,9 +57,18 @@
       "dataSaved": {
         "text1": "数据已保存"
       },
+      "internalServer": {
+        "text1": "服务器错误"
+      },
+      "invalidCredentials": {
+        "text1": "用户名或密码错误"
+      },
       "match": {
         "text1": "双方互相喜欢！",
         "text2": "尽快写信"
+      },
+      "rateLimitExceeded": {
+        "text1": "请求次数超出限制"
       },
       "unknownError": {
         "text1": "出现错误",

@@ -57,9 +57,18 @@
       "dataSaved": {
         "text1": "Datos guardados"
       },
+      "internalServer": {
+        "text1": "Error del servidor"
+      },
+      "invalidCredentials": {
+        "text1": "Usuario o contraseña incorrectos"
+      },
       "match": {
         "text1": "¡Es mutuo!",
         "text2": "Escribe pronto"
+      },
+      "rateLimitExceeded": {
+        "text1": "Se excedió el límite de solicitudes"
       },
       "unknownError": {
         "text1": "Algo salió mal",

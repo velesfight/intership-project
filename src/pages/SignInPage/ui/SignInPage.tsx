@@ -1,3 +1,6 @@
+import { zodResolver } from '@hookform/resolvers/zod';
+import { useEffect } from 'react';
+import { useForm } from 'react-hook-form';
 import { useTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router';
 
@@ -5,14 +8,40 @@ import { Button } from '~/shared/components/Button';
 import { Text } from '~/shared/components/Text';
 import { TextInput } from '~/shared/components/TextInput';
 import { AppRoute } from '~/shared/constants/routes';
+import { usePageTitle } from '~/shared/hooks';
 
+import { useSignIn } from '../api';
+import { DEFAULT_SIGN_IN_VALUES } from '../constants';
+import { signInSchema } from '../model';
+import { SignInFields } from '../types';
 import styles from './SignInPage.module.css';
 
 export const SignInPage = () => {
   const { t } = useTranslation();
+  const signInMutation = useSignIn();
+
+  const {
+    register,
+    setFocus,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<SignInFields>({
+    resolver: zodResolver(signInSchema),
+    defaultValues: DEFAULT_SIGN_IN_VALUES,
+  });
+
+  const onSubmit = handleSubmit((values) => {
+    signInMutation.mutate(values);
+  });
+
+  useEffect(() => {
+    setFocus('email');
+  }, [setFocus, t]);
+
+  usePageTitle(t('auth.title.signIn'));
 
   return (
-    <form className={styles.wrapper}>
+    <form className={styles.wrapper} onSubmit={onSubmit} noValidate>
       <div className={styles.card}>
         <div className={styles.content}>
           <Text variant='title2' className={styles.label}>
@@ -22,40 +51,48 @@ export const SignInPage = () => {
             label={t('auth.label.email')}
             placeholder={t('auth.placeholder.enterEmail')}
             className={styles.input}
+            invalid={!!errors.email}
+            hint={errors.email?.message}
+            disabled={signInMutation.isPending}
+            {...register('email')}
           />
           <TextInput
             label={t('auth.label.password')}
             type='password'
             placeholder={t('auth.placeholder.enterPassword')}
             className={styles.input}
+            invalid={!!errors.password}
+            hint={errors.password?.message}
+            disabled={signInMutation.isPending}
+            {...register('password')}
           />
           <div className={styles.container}>
-            <Text color='primary' className={styles.recover}>
+            <Text color='primary'>
               <Link to={AppRoute.Recover}>{t('auth.text.forgotPassword')}</Link>
             </Text>
           </div>
-          <Button className={styles.button} type='submit' fullWidth>
+          <Button
+            loading={signInMutation.isPending}
+            className={styles.button}
+            type='submit'
+            fullWidth
+          >
             {t('auth.button.signIn')}
           </Button>
           <div className={styles.footer}>
             <Text color='content2'>{t('auth.text.noAccount')}</Text>
-            <Text color='primary' className={styles.join}>
+            <Text color='primary'>
               <Link to={AppRoute.SignUp}> {t('auth.text.signUp')}</Link>
             </Text>
           </div>
         </div>
       </div>
-      <Text variant='caption1' className={styles.agreement} color='content1'>
-        <Trans
-          i18nKey='auth.text.agreement'
-          t={t}
-          components={{
-            span: <span className={styles.fade} />,
-            link1: <Link to='#' className={styles.link} />,
-            link2: <Link to='#' className={styles.link} />,
-            link3: <Link to='#' className={styles.link} />,
-          }}
-        />
+      <Text variant='caption1' className={styles.agreement}>
+        <Trans i18nKey='auth.text.agreement' t={t}>
+          <Link to='#' className={styles.link} />
+          <Link to='#' className={styles.link} />
+          <Link to='#' className={styles.link} />
+        </Trans>
       </Text>
     </form>
   );

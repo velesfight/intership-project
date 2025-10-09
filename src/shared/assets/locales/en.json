@@ -57,9 +57,18 @@
       "dataSaved": {
         "text1": "Data saved"
       },
+      "internalServer": {
+        "text1": "Server error"
+      },
+      "invalidCredentials": {
+        "text1": "Invalid username or password"
+      },
       "match": {
         "text1": "It's mutual!",
         "text2": "Write soon"
+      },
+      "rateLimitExceeded": {
+        "text1": "Rate limit exceeded"
       },
       "unknownError": {
         "text1": "Something went wrong",

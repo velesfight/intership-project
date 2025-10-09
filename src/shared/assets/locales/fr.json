@@ -57,9 +57,18 @@
       "dataSaved": {
         "text1": "Données enregistrées"
       },
+      "internalServer": {
+        "text1": "Erreur du serveur"
+      },
+      "invalidCredentials": {
+        "text1": "Nom d'utilisateur ou mot de passe incorrect"
+      },
       "match": {
         "text1": "C'est réciproque !",
         "text2": "Écrivez vite"
+      },
+      "rateLimitExceeded": {
+        "text1": "Limite de requêtes dépassée"
       },
       "unknownError": {
         "text1": "Une erreur est survenue",

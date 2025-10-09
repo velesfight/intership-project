@@ -57,9 +57,18 @@
       "dataSaved": {
         "text1": "Данные сохранены"
       },
+      "internalServer": {
+        "text1": "Ошибка сервера"
+      },
+      "invalidCredentials": {
+        "text1": "Неправильный логин или пароль"
+      },
       "match": {
         "text1": "Это взаимно!",
         "text2": "Напишите скорее"
+      },
+      "rateLimitExceeded": {
+        "text1": "Превышен лимит запросов"
       },
       "unknownError": {
         "text1": "Что-то пошло не так",
