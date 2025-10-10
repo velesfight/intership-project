@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 import { Link } from 'react-router';
 
@@ -13,7 +14,12 @@ import styles from './SignUpPage.module.css';
 
 export const SignUpPage = () => {
   const { t } = useTranslation();
+  const [checked, setChecked] = useState(false);
   usePageTitle(t('auth.title.signUp'));
+
+  const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setChecked(event.target.checked);
+  };
 
   return (
     <form className={styles.wrapper}>
@@ -33,7 +39,12 @@ export const SignUpPage = () => {
           placeholder={t('auth.placeholder.enterPassword')}
           className={styles.input}
         />
-        <CheckBox className={styles.checkbox} label={t('auth.text.confirmAge')} />
+        <CheckBox
+          label={t('auth.text.confirmAge')}
+          className={styles.checkbox}
+          checked={checked}
+          onChange={onChange}
+        />
         <Button className={styles.button} type='submit' fullWidth>
           {t('common.next')}
         </Button>

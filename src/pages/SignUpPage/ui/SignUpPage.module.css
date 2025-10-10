@@ -45,14 +45,11 @@
 
 .agreement {
   text-align: center;
+  color: rgb(from var(--content-1) r g b/ 44%);
 }
 
 .link {
-  opacity: 0.7;
-}
-
-.fade {
-  opacity: 0.44;
+  color: rgb(from var(--content-1) r g b/ 70%);
 }
 
 @media (--sm-up) {

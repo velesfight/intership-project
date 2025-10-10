@@ -7,7 +7,7 @@
 
 .container {
   display: flex;
-  gap: var(--space-4);
+  gap: var(--space-8);
   user-select: none;
   align-items: center;
 }
