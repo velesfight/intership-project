@@ -7,7 +7,7 @@ import { CheckBox } from '~/shared/components/Checkbox';
 import { Stepper } from '~/shared/components/Stepper';
 import { Text } from '~/shared/components/Text';
 import { TextInput } from '~/shared/components/TextInput';
-import { AppRoute } from '~/shared/constants/routes';
+import { Route } from '~/shared/constants/routes';
 import { usePageTitle } from '~/shared/hooks';
 
 import styles from './SignUpPage.module.css';
@@ -52,7 +52,7 @@ export const SignUpPage = () => {
         <div className={styles.footer}>
           <Text color='content2'>{t('auth.text.haveAccount')}</Text>
           <Text color='primary'>
-            <Link to={AppRoute.SignIn}>{t('auth.button.signIn')}</Link>
+            <Link to={Route.SignIn}>{t('auth.button.signIn')}</Link>
           </Text>
         </div>
       </div>

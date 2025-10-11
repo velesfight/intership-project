@@ -59,7 +59,7 @@
 
 .secondary {
   color: var(--purple-500);
-  background-color: #f8f3ff; /* new palette: purple 25 */
+  background-color: var(--purple-25);
 
   @media (hover: hover) {
     &:hover:not(:disabled) {
@@ -69,7 +69,7 @@
   }
 
   &:active:not(:disabled) {
-    background-color: #f8f3ff; /* new palette: purple 25 */
+    background-color: var(--purple-25);
   }
 }
 
@@ -85,7 +85,7 @@
   }
 
   &:active:not(:disabled) {
-    background-color: #f8f3ff; /* new palette: purple 25 */
+    background-color: var(--purple-25);
   }
 }
 
@@ -113,7 +113,7 @@
 
   @media (hover: hover) {
     &:hover:not(:disabled) {
-      color: #313a4b; /* new palette: base 900 */
+      color: var(--base-900);
       background-color: hsl(from var(--white) h s l / 10%);
       backdrop-filter: blur(64px);
     }
@@ -144,17 +144,17 @@
 
 .semiGray {
   color: var(--white);
-  background-color: #858fa180; /* new palette: base 500 50% */
+  background-color: hsl(var(--base-500) h s l / 50%);
   backdrop-filter: blur(64px);
 
   @media (hover: hover) {
     &:hover:not(:disabled) {
-      background-color: #858fa1a6; /* new palette: base 500 65% */
+      background-color: hsl(var(--base-500) h s l / 65%);
     }
   }
 
   &:active:not(:disabled) {
-    background-color: #858fa1cc; /* new palette: base 500 80% */
+    background-color: hsl(var(--base-500) h s l / 80%);
   }
 }
 

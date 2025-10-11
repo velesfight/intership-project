@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import * as RadixToast from '@radix-ui/react-toast';
+import { Root, Title, Description, Close } from '@radix-ui/react-toast';
 import { clsx } from 'clsx';
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
@@ -24,7 +24,7 @@ export const Toast: FC<ToastProps> = ({
   const iconVariantClass = styles[`${variant}Icon`];
 
   return (
-    <RadixToast.Root {...props} asChild>
+    <Root {...props} asChild>
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -35,19 +35,19 @@ export const Toast: FC<ToastProps> = ({
           <Icon aria-hidden className={clsx(styles.icon, styles.iconContainer, iconVariantClass)} />
         </div>
         <div className={styles.textWrapper}>
-          <RadixToast.Title asChild>
+          <Title asChild>
             <Text variant='text1'>{text1}</Text>
-          </RadixToast.Title>
+          </Title>
           {text2 && (
-            <RadixToast.Description asChild>
+            <Description asChild>
               <Text variant='text2'>{text2}</Text>
-            </RadixToast.Description>
+            </Description>
           )}
         </div>
-        <RadixToast.Close aria-label={t('common.close')} className={styles.iconClose}>
+        <Close aria-label={t('common.close')} className={styles.iconClose}>
           <CloseIcon aria-hidden className={styles.iconCloseSvg} />
-        </RadixToast.Close>
+        </Close>
       </motion.div>
-    </RadixToast.Root>
+    </Root>
   );
 };

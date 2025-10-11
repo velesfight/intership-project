@@ -1,4 +1,4 @@
-import * as RadixImage from '@radix-ui/react-avatar';
+import { Root, Image as RadixImage, Fallback } from '@radix-ui/react-avatar';
 import { clsx } from 'clsx';
 import { FC } from 'react';
 
@@ -13,11 +13,9 @@ export const Image: FC<ImageProps> = ({
   ...props
 }) => {
   return (
-    <RadixImage.Root className={clsx(styles.root, className)} style={style}>
-      <RadixImage.Image className={styles.image} {...props} />
-      <RadixImage.Fallback className={clsx(styles.fallback, fallbackClassName)}>
-        {fallback}
-      </RadixImage.Fallback>
-    </RadixImage.Root>
+    <Root className={clsx(styles.root, className)} style={style}>
+      <RadixImage className={styles.image} {...props} />
+      <Fallback className={clsx(styles.fallback, fallbackClassName)}>{fallback}</Fallback>
+    </Root>
   );
 };

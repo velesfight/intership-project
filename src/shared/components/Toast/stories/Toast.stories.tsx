@@ -1,4 +1,4 @@
-import * as RadixToast from '@radix-ui/react-toast';
+import { ToastProvider, ToastViewport } from '@radix-ui/react-toast';
 import { Meta, StoryObj } from '@storybook/react-vite';
 
 import { Toast } from '../ui';
@@ -17,11 +17,11 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div style={{ width: '300px' }}>
-        <RadixToast.Provider>
+      <div style={{ width: 300 }}>
+        <ToastProvider>
           <Story />
-          <RadixToast.Viewport />
-        </RadixToast.Provider>
+          <ToastViewport />
+        </ToastProvider>
       </div>
     ),
   ],

@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 import { Button } from '~/shared/components/Button';
 import { Text } from '~/shared/components/Text';
 import { TextInput } from '~/shared/components/TextInput';
-import { AppRoute } from '~/shared/constants/routes';
+import { Route } from '~/shared/constants/routes';
 import { usePageTitle } from '~/shared/hooks';
 
 import { useSignIn } from '../api';
@@ -68,7 +68,7 @@ export const SignInPage = () => {
           />
           <div className={styles.container}>
             <Text color='primary'>
-              <Link to={AppRoute.Recover}>{t('auth.text.forgotPassword')}</Link>
+              <Link to={Route.Recover}>{t('auth.text.forgotPassword')}</Link>
             </Text>
           </div>
           <Button
@@ -82,7 +82,7 @@ export const SignInPage = () => {
           <div className={styles.footer}>
             <Text color='content2'>{t('auth.text.noAccount')}</Text>
             <Text color='primary'>
-              <Link to={AppRoute.SignUp}> {t('auth.text.signUp')}</Link>
+              <Link to={Route.SignUp}> {t('auth.text.signUp')}</Link>
             </Text>
           </div>
         </div>
