@@ -1,0 +1,1 @@
+export { normalizePercent } from './normalizePercent';
