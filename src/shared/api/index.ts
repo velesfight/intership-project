@@ -1,3 +1,3 @@
 export * from './artifacts';
 
-export { publicApi } from './lib';
+export { api, publicApi } from './lib';
