@@ -78,7 +78,9 @@
     "profile": {
       "alt": {},
       "button": {},
-      "label": {},
+      "label": {
+        "profileLink": "Профиль"
+      },
       "placeholder": {},
       "text": {},
       "title": {}
