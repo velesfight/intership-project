@@ -20,6 +20,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  :focus-visible + & {
+    outline: auto;
+    outline-offset: 1px;
+  }
 }
 
 .icon {
