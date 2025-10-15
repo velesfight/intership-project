@@ -40,7 +40,7 @@
       }
     },
     "common": {
-      "close": "Schließen",
+      "close": "Cerrar",
       "next": "Siguiente"
     },
     "feed": {
@@ -63,9 +63,15 @@
       "invalidCredentials": {
         "text1": "Usuario o contraseña incorrectos"
       },
+      "invalidPhotoType": {
+        "text1": "Tipos de foto permitidos: {{allowedTypes}}"
+      },
       "match": {
         "text1": "¡Es mutuo!",
         "text2": "Escribe pronto"
+      },
+      "photoTooLarge": {
+        "text1": "El tamaño de la foto no debe exceder {{maxSize}}MB"
       },
       "rateLimitExceeded": {
         "text1": "Se excedió el límite de solicitudes"
@@ -95,10 +101,14 @@
     },
     "shared": {
       "alt": {},
-      "label": {},
+      "label": {
+        "progress": "Paso {{current}} de {{total}}"
+      },
       "placeholder": {},
       "text": {
-        "progress": "Paso {{current}} de {{total}}"
+        "choosePhoto": "Elegir foto",
+        "noPhotoChosen": "No se eligió ninguna foto",
+        "uploadError": "Ocurrió un error al subir los archivos"
       },
       "title": {}
     },

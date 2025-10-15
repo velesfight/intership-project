@@ -63,9 +63,15 @@
       "invalidCredentials": {
         "text1": "Nom d'utilisateur ou mot de passe incorrect"
       },
+      "invalidPhotoType": {
+        "text1": "Types de photo autorisés : {{allowedTypes}}"
+      },
       "match": {
         "text1": "C'est réciproque !",
         "text2": "Écrivez vite"
+      },
+      "photoTooLarge": {
+        "text1": "La taille de la photo ne doit pas dépasser {{maxSize}} MB"
       },
       "rateLimitExceeded": {
         "text1": "Limite de requêtes dépassée"
@@ -95,10 +101,14 @@
     },
     "shared": {
       "alt": {},
-      "label": {},
+      "label": {
+        "progress": "Étape {{current}} sur {{total}}"
+      },
       "placeholder": {},
       "text": {
-        "progress": "Étape {{current}} sur {{total}}"
+        "choosePhoto": "Choisir une photo",
+        "noPhotoChosen": "Aucune photo choisie",
+        "uploadError": "Une erreur s'est produite lors du téléchargement des fichiers"
       },
       "title": {}
     },

@@ -63,9 +63,15 @@
       "invalidCredentials": {
         "text1": "Неправильный логин или пароль"
       },
+      "invalidPhotoType": {
+        "text1": "Допустимые типы фото: {{allowedTypes}}"
+      },
       "match": {
         "text1": "Это взаимно!",
         "text2": "Напишите скорее"
+      },
+      "photoTooLarge": {
+        "text1": "Размер фото не должен превышать {{maxSize}}MB"
       },
       "rateLimitExceeded": {
         "text1": "Превышен лимит запросов"
@@ -95,10 +101,14 @@
     },
     "shared": {
       "alt": {},
-      "label": {},
+      "label": {
+        "progress": "Шаг {{current}} из {{total}}"
+      },
       "placeholder": {},
       "text": {
-        "progress": "Шаг {{current}} из {{total}}"
+        "choosePhoto": "Выбрать фото",
+        "noPhotoChosen": "Фото не выбрано",
+        "uploadError": "Произошла ошибка при загрузке файлов"
       },
       "title": {}
     },

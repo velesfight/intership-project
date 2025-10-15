@@ -1,0 +1,14 @@
+.photoPicker {
+  position: relative;
+  display: inline-block;
+}
+
+.fileInput {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

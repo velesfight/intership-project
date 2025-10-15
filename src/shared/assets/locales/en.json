@@ -63,9 +63,15 @@
       "invalidCredentials": {
         "text1": "Invalid username or password"
       },
+      "invalidPhotoType": {
+        "text1": "Allowed photo types: {{allowedTypes}}"
+      },
       "match": {
         "text1": "It's mutual!",
         "text2": "Write soon"
+      },
+      "photoTooLarge": {
+        "text1": "Photo size must not exceed {{maxSize}}MB"
       },
       "rateLimitExceeded": {
         "text1": "Rate limit exceeded"
@@ -95,10 +101,14 @@
     },
     "shared": {
       "alt": {},
-      "label": {},
+      "label": {
+        "progress": "Step {{current}} of {{total}}"
+      },
       "placeholder": {},
       "text": {
-        "progress": "Step {{current}} of {{total}}"
+        "choosePhoto": "Choose photo",
+        "noPhotoChosen": "No photo chosen",
+        "uploadError": "An error occurred while uploading files"
       },
       "title": {}
     },

@@ -40,7 +40,7 @@
       }
     },
     "common": {
-      "close": "關閉",
+      "close": "关闭",
       "next": "下一步"
     },
     "feed": {
@@ -63,9 +63,15 @@
       "invalidCredentials": {
         "text1": "用户名或密码错误"
       },
+      "invalidPhotoType": {
+        "text1": "允许的照片类型：{{allowedTypes}}"
+      },
       "match": {
         "text1": "双方互相喜欢！",
         "text2": "尽快写信"
+      },
+      "photoTooLarge": {
+        "text1": "照片大小不能超过 {{maxSize}}MB"
       },
       "rateLimitExceeded": {
         "text1": "请求次数超出限制"
@@ -95,10 +101,14 @@
     },
     "shared": {
       "alt": {},
-      "label": {},
+      "label": {
+        "progress": "第 {{current}} 步，共 {{total}} 步"
+      },
       "placeholder": {},
       "text": {
-        "progress": "第 {{current}} 步，共 {{total}} 步"
+        "choosePhoto": "选择照片",
+        "noPhotoChosen": "未选择照片",
+        "uploadError": "上传文件时发生错误"
       },
       "title": {}
     },

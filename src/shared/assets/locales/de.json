@@ -63,9 +63,15 @@
       "invalidCredentials": {
         "text1": "Ungültiger Benutzername oder Passwort"
       },
+      "invalidPhotoType": {
+        "text1": "Erlaubte Fototypen: {{allowedTypes}}"
+      },
       "match": {
         "text1": "Es ist gegenseitig!",
         "text2": "Schreib bald"
+      },
+      "photoTooLarge": {
+        "text1": "Fotogröße darf {{maxSize}}MB nicht überschreiten"
       },
       "rateLimitExceeded": {
         "text1": "Anfragelimit überschritten"
@@ -95,10 +101,14 @@
     },
     "shared": {
       "alt": {},
-      "label": {},
+      "label": {
+        "progress": "Schritt {{current}} von {{total}}"
+      },
       "placeholder": {},
       "text": {
-        "progress": "Schritt {{current}} von {{total}}"
+        "choosePhoto": "Foto auswählen",
+        "noPhotoChosen": "Kein Foto ausgewählt",
+        "uploadError": "Beim Hochladen der Dateien ist ein Fehler aufgetreten"
       },
       "title": {}
     },
