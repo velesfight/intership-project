@@ -74,6 +74,20 @@
 
 @media (--md-up) {
   .navigation {
+    flex-direction: column;
+    padding-block: var(--space-16);
+    gap: var(--space-6);
+  }
+
+  .navLink {
+    padding-block: var(--space-8);
+    padding-inline: var(--space-24);
+    text-wrap: nowrap;
+  }
+}
+
+@media (--xxl-up) {
+  .navigation {
     display: none;
   }
 }
