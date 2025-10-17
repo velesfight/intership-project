@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 
-import { useSignOut } from './useSignOut';
+import { useSignOut } from '../hooks';
 
-export const useDevHelpers = () => {
+export const DevHelper = () => {
   const { mutate: signOut } = useSignOut();
 
   useEffect(() => {
@@ -19,4 +19,6 @@ export const useDevHelpers = () => {
       };
     }
   }, [signOut]);
+
+  return null;
 };
