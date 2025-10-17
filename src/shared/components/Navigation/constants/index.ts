@@ -14,7 +14,7 @@ export const NAV_ITEMS_CONFIG = [
     route: Route.Chat,
     key: 'chats.title.chat',
     icon: BubbleChatIcon,
-    notifications: 1,
+    notifications: 0,
   },
   {
     route: Route.Tests,

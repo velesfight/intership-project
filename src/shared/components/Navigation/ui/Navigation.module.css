@@ -80,7 +80,8 @@
   }
 
   .navLink {
-    padding-block: var(--space-8);
+    padding-block: var(--space-8) var(--space-4);
+    gap: 0;
     padding-inline: var(--space-24);
     text-wrap: nowrap;
   }
@@ -88,6 +89,24 @@
 
 @media (--xxl-up) {
   .navigation {
-    display: none;
+    padding-block: var(--space-24);
+    padding-inline: var(--space-16);
+  }
+
+  .navLink {
+    flex-direction: row;
+    gap: var(--space-16);
+    padding-block: var(--space-18);
+    padding-inline: var(--space-20);
+  }
+
+  .iconContainer {
+    margin-block-end: 0;
+  }
+
+  .label {
+    font-size: var(--space-16);
+    line-height: var(--space-20);
+    font-weight: 500;
   }
 }
