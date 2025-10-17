@@ -6,13 +6,17 @@ import { useDevHelpers } from '~/shared/lib/devHelpers';
 
 import { Router } from './Router';
 
-export const App = () => {
+const AppInner = () => {
   useDevHelpers();
 
+  return <Router />;
+};
+
+export const App = () => {
   return (
     <LocaleProvider>
       <QueryClientProvider client={queryClient}>
-        <Router />
+        <AppInner />
       </QueryClientProvider>
     </LocaleProvider>
   );

@@ -4,27 +4,33 @@
       "alt": {},
       "button": {
         "hidePassword": "隐藏密码",
+        "noCode": "没有收到验证码？",
+        "sendAgain": "重新发送",
         "showPassword": "显示密码",
         "signIn": "登录"
       },
       "label": {
+        "code": "验证码",
         "email": "邮箱",
         "password": "密码"
       },
       "placeholder": {
-        "enterEmail": "请输入邮箱",
-        "enterPassword": "请输入密码"
+        "enterEmail": "输入邮箱",
+        "enterPassword": "输入密码"
       },
       "text": {
-        "agreement": "继续即表示您同意<0>隐私政策</0>和<1>Cookie政策</1>，并接受<2>服务条款</2>",
-        "confirmAge": "我确认我已满18岁",
+        "agreement": "继续即表示您同意<0>隐私政策</0>和<1>Cookie政策</1>，并接受<2>许可协议条款。</2>",
+        "codeSent": "我们已向{{email}}发送了验证码",
+        "confirmAge": "我确认已满18岁",
         "forgotPassword": "忘记密码",
-        "haveAccount": "您已经有账号了吗",
+        "haveAccount": "已有账户？",
         "noAccount": "还没有账户？",
-        "passwordSize": "必须包含至少8个字符 不超过50个字符",
-        "signUp": "注册"
+        "passwordSize": "必须包含至少8个字符，不超过50个字符",
+        "signUp": "注册",
+        "timer": "新验证码可在1分46秒后重新获取"
       },
       "title": {
+        "confirmEmail": "邮箱确认",
         "signIn": "登录",
         "signUp": "注册"
       }
@@ -67,18 +73,18 @@
         "text1": "允许的照片类型：{{allowedTypes}}"
       },
       "match": {
-        "text1": "双方互相喜欢！",
-        "text2": "尽快写信"
+        "text1": "互相喜欢！",
+        "text2": "快聊聊吧"
       },
       "photoTooLarge": {
-        "text1": "照片大小不能超过 {{maxSize}}MB"
+        "text1": "照片大小不能超过{{maxSize}}MB"
       },
       "rateLimitExceeded": {
-        "text1": "请求次数超出限制"
+        "text1": "请求频率超限"
       },
       "unknownError": {
-        "text1": "出现错误",
-        "text2": "请稍后再试或联系客服"
+        "text1": "出了点问题",
+        "text2": "请稍后重试或联系客服"
       }
     },
     "profile": {
@@ -102,7 +108,7 @@
     "shared": {
       "alt": {},
       "label": {
-        "progress": "第 {{current}} 步，共 {{total}} 步"
+        "progress": "第{{current}}步，共{{total}}步"
       },
       "placeholder": {},
       "text": {

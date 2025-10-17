@@ -1,0 +1,81 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  position: relative;
+  inline-size: 100%;
+  background-color: var(--background-1);
+  padding: var(--space-12);
+  border: var(--border-1) solid var(--border-color-1);
+  border-radius: var(--space-20);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding-block: var(--space-20);
+  padding-inline: var(--space-18);
+}
+
+.info {
+  padding: var(--space-24);
+}
+
+.infoText {
+  margin-block-end: var(--space-24);
+}
+
+.timer {
+  margin-block-start: var(--space-8);
+}
+
+.timerText {
+  color: var(--base-400);
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: var(--space-22);
+}
+
+.button {
+  color: var(--purple-500);
+  background-color: transparent;
+
+  @media (hover: hover) {
+    &:hover:not(:disabled) {
+      color: var(--purple-600);
+      background-color: hsl(from var(--white) h s l / 10%);
+      backdrop-filter: blur(64px);
+    }
+  }
+
+  &:active:not(:disabled) {
+    background-color: hsl(from var(--white) h s l / 30%);
+    backdrop-filter: blur(64px);
+  }
+}
+
+.buttonText {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-24);
+  padding-block: var(--space-8) var(--space-20);
+  padding-inline: var(--space-24);
+}
+
+.footer {
+  display: flex;
+  padding-block: var(--space-4);
+  gap: var(--space-12);
+}

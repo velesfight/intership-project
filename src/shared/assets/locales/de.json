@@ -3,11 +3,14 @@
     "auth": {
       "alt": {},
       "button": {
-        "hidePassword": "Passwort verbergen",
+        "hidePassword": "Passwort ausblenden",
+        "noCode": "Code nicht erhalten?",
+        "sendAgain": "Erneut senden",
         "showPassword": "Passwort anzeigen",
         "signIn": "Anmelden"
       },
       "label": {
+        "code": "Code",
         "email": "E-Mail",
         "password": "Passwort"
       },
@@ -16,15 +19,18 @@
         "enterPassword": "Passwort eingeben"
       },
       "text": {
-        "agreement": "Indem Sie fortfahren, stimmen Sie der <0>Datenschutzrichtlinie</0> und der <1>Cookie-Richtlinie</1> zu und akzeptieren außerdem <2>die Lizenzbedingungen.</2>",
+        "agreement": "Durch Fortfahren stimmen Sie der <0>Datenschutzrichtlinie</0> und <1>Cookie-Richtlinie</1> zu und akzeptieren die <2>Lizenzvereinbarungsbedingungen.</2>",
+        "codeSent": "Wir haben einen Code an {{email}} gesendet",
         "confirmAge": "Ich bestätige, dass ich 18 Jahre alt bin",
         "forgotPassword": "Passwort vergessen",
         "haveAccount": "Haben Sie bereits ein Konto?",
-        "noAccount": "Noch kein Konto?",
+        "noAccount": "Noch kein Konto? ",
         "passwordSize": "Muss mindestens 8 und höchstens 50 Zeichen enthalten",
-        "signUp": "Registrieren"
+        "signUp": "Registrieren",
+        "timer": "Neuer Code kann in erhalten werden: 1 Min. 46 Sek."
       },
       "title": {
+        "confirmEmail": "E-Mail-Bestätigung",
         "signIn": "Anmelden",
         "signUp": "Registrierung"
       }
@@ -61,7 +67,7 @@
         "text1": "Serverfehler"
       },
       "invalidCredentials": {
-        "text1": "Ungültiger Benutzername oder Passwort"
+        "text1": "Falscher Login oder Passwort"
       },
       "invalidPhotoType": {
         "text1": "Erlaubte Fototypen: {{allowedTypes}}"
@@ -71,14 +77,14 @@
         "text2": "Schreib bald"
       },
       "photoTooLarge": {
-        "text1": "Fotogröße darf {{maxSize}}MB nicht überschreiten"
+        "text1": "Fotogröße sollte {{maxSize}}MB nicht überschreiten"
       },
       "rateLimitExceeded": {
-        "text1": "Anfragelimit überschritten"
+        "text1": "Rate Limit überschritten"
       },
       "unknownError": {
-        "text1": "Etwas ist schiefgelaufen",
-        "text2": "Bitte versuchen Sie es später erneut oder wenden Sie sich an den Support"
+        "text1": "Etwas ist schief gelaufen",
+        "text2": "Versuchen Sie es später noch einmal oder wenden Sie sich an den Support"
       }
     },
     "profile": {

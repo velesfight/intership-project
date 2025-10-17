@@ -4,28 +4,34 @@
       "alt": {},
       "button": {
         "hidePassword": "Masquer le mot de passe",
+        "noCode": "Vous ne recevez pas le code ?",
+        "sendAgain": "Renvoyer",
         "showPassword": "Afficher le mot de passe",
         "signIn": "Se connecter"
       },
       "label": {
+        "code": "Code",
         "email": "E-mail",
         "password": "Mot de passe"
       },
       "placeholder": {
-        "enterEmail": "Entrez votre e-mail",
-        "enterPassword": "Entrez votre mot de passe"
+        "enterEmail": "Saisir l'e-mail",
+        "enterPassword": "Saisir le mot de passe"
       },
       "text": {
-        "agreement": "En continuant, vous acceptez la <0>Politique de confidentialité</0> et la <1>Politique des cookies</1> , et vous acceptez également <2>les conditions d'utilisation.</2>",
-        "confirmAge": "Je confirme que j'ai 18 ans",
+        "agreement": "En continuant, vous acceptez la <0>politique de confidentialité</0> et la <1>politique relative aux cookies</1>, et acceptez les <2>conditions du contrat de licence.</2>",
+        "codeSent": "Nous avons envoyé un code à {{email}}",
+        "confirmAge": "Je confirme que j'ai 18 ans ou plus",
         "forgotPassword": "Mot de passe oublié",
-        "haveAccount": "Avez-vous déjà un compte ?",
-        "noAccount": "Pas encore de compte ?",
-        "passwordSize": "Doit contenir au moins 8 et au plus 50 caractères",
-        "signUp": "S'inscrire"
+        "haveAccount": "Vous avez déjà un compte ?",
+        "noAccount": "Vous n'avez pas de compte ? ",
+        "passwordSize": "Doit contenir au moins 8 et pas plus de 50 caractères",
+        "signUp": "S'inscrire",
+        "timer": "Nouveau code peut être reçu dans : 1 min 46 sec"
       },
       "title": {
-        "signIn": "Connexion",
+        "confirmEmail": "Confirmation d'e-mail",
+        "signIn": "Se connecter",
         "signUp": "Inscription"
       }
     },
@@ -58,27 +64,27 @@
         "text1": "Données enregistrées"
       },
       "internalServer": {
-        "text1": "Erreur du serveur"
+        "text1": "Erreur serveur"
       },
       "invalidCredentials": {
-        "text1": "Nom d'utilisateur ou mot de passe incorrect"
+        "text1": "Identifiant ou mot de passe incorrect"
       },
       "invalidPhotoType": {
         "text1": "Types de photo autorisés : {{allowedTypes}}"
       },
       "match": {
-        "text1": "C'est réciproque !",
-        "text2": "Écrivez vite"
+        "text1": "C'est mutuel !",
+        "text2": "Écrivez bientôt"
       },
       "photoTooLarge": {
-        "text1": "La taille de la photo ne doit pas dépasser {{maxSize}} MB"
+        "text1": "La taille de la photo ne doit pas dépasser {{maxSize}}MB"
       },
       "rateLimitExceeded": {
-        "text1": "Limite de requêtes dépassée"
+        "text1": "Limite de taux dépassée"
       },
       "unknownError": {
-        "text1": "Une erreur est survenue",
-        "text2": "Veuillez réessayer plus tard ou contacter le support"
+        "text1": "Quelque chose s'est mal passé",
+        "text2": "Réessayez plus tard ou contactez le support"
       }
     },
     "profile": {
@@ -107,7 +113,7 @@
       "placeholder": {},
       "text": {
         "choosePhoto": "Choisir une photo",
-        "noPhotoChosen": "Aucune photo choisie",
+        "noPhotoChosen": "Aucune photo sélectionnée",
         "uploadError": "Une erreur s'est produite lors du téléchargement des fichiers"
       },
       "title": {}

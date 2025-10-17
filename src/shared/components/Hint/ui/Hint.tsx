@@ -15,7 +15,7 @@ export const Hint: FC<HintProps> = ({ variant = DEFAULT_VARIANT, children, ...pr
       {IconComponent && (
         <IconComponent className={clsx(styles.icon, styles[variant])} aria-hidden />
       )}
-      <Text variant='text2' className={styles[variant]}>
+      <Text variant='caption1' className={styles[variant]}>
         {children}
       </Text>
     </div>

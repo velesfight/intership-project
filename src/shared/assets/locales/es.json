@@ -4,27 +4,33 @@
       "alt": {},
       "button": {
         "hidePassword": "Ocultar contraseña",
+        "noCode": "¿No recibes el código?",
+        "sendAgain": "Enviar de nuevo",
         "showPassword": "Mostrar contraseña",
         "signIn": "Iniciar sesión"
       },
       "label": {
-        "email": "Correo electrónico",
+        "code": "Código",
+        "email": "Email",
         "password": "Contraseña"
       },
       "placeholder": {
-        "enterEmail": "Introduce tu correo electrónico",
-        "enterPassword": "Introduce tu contraseña"
+        "enterEmail": "Ingresa el email",
+        "enterPassword": "Ingresa la contraseña"
       },
       "text": {
-        "agreement": "Al continuar, acepta la <0>Política de privacidad</0> y la <1>Política de cookies</1> , y también acepta <2>los Términos del servicio.</2>",
-        "confirmAge": "Confirmo que tengo 18 años",
+        "agreement": "Al continuar, aceptas la <0>política de privacidad</0> y la <1>política de cookies</1>, y aceptas los <2>términos del acuerdo de licencia.</2>",
+        "codeSent": "Enviamos un código a {{email}}",
+        "confirmAge": "Confirmo que tengo 18 años o más",
         "forgotPassword": "¿Olvidaste tu contraseña?",
         "haveAccount": "¿Ya tienes una cuenta?",
-        "noAccount": "¿No tienes una cuenta?",
+        "noAccount": "¿No tienes una cuenta? ",
         "passwordSize": "Debe contener al menos 8 y no más de 50 caracteres",
-        "signUp": "Registrarse"
+        "signUp": "Registrarse",
+        "timer": "Nuevo código se puede recibir en: 1 min 46 seg"
       },
       "title": {
+        "confirmEmail": "Confirmación de email",
         "signIn": "Iniciar sesión",
         "signUp": "Registro"
       }
@@ -74,11 +80,11 @@
         "text1": "El tamaño de la foto no debe exceder {{maxSize}}MB"
       },
       "rateLimitExceeded": {
-        "text1": "Se excedió el límite de solicitudes"
+        "text1": "Límite de tasa excedido"
       },
       "unknownError": {
         "text1": "Algo salió mal",
-        "text2": "Por favor, inténtelo más tarde o contacte al soporte"
+        "text2": "Intenta más tarde o contacta al soporte"
       }
     },
     "profile": {
@@ -107,8 +113,8 @@
       "placeholder": {},
       "text": {
         "choosePhoto": "Elegir foto",
-        "noPhotoChosen": "No se eligió ninguna foto",
-        "uploadError": "Ocurrió un error al subir los archivos"
+        "noPhotoChosen": "No se eligió foto",
+        "uploadError": "Ocurrió un error al subir archivos"
       },
       "title": {}
     },

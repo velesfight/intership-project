@@ -4,10 +4,13 @@
       "alt": {},
       "button": {
         "hidePassword": "Hide password",
+        "noCode": "Not receiving the code?",
+        "sendAgain": "Send again",
         "showPassword": "Show password",
-        "signIn": "Sign In"
+        "signIn": "Sign in"
       },
       "label": {
+        "code": "Code",
         "email": "Email",
         "password": "Password"
       },
@@ -16,17 +19,20 @@
         "enterPassword": "Enter password"
       },
       "text": {
-        "agreement": "By continuing, you agree to the <0>Privacy Policy</0> and the <1>Cookie Policy</1> , and also accept <2>the Terms of Service.</2>",
+        "agreement": "By continuing, you agree to the <0>privacy policy</0> and <1>cookie policy</1>, and accept the <2>license agreement terms.</2>",
+        "codeSent": "We sent a code to {{email}}",
         "confirmAge": "I confirm that I am 18 years old",
         "forgotPassword": "Forgot password",
-        "haveAccount": "Do you already have an account?",
-        "noAccount": "Don't have an account?",
+        "haveAccount": "Already have an account?",
+        "noAccount": "Don't have an account? ",
         "passwordSize": "Must contain at least 8 and no more than 50 characters",
-        "signUp": "Sign Up"
+        "signUp": "Sign up",
+        "timer": "New code can be received in: 1 min 46 sec"
       },
       "title": {
-        "signIn": "Sign In",
-        "signUp": "Sign Up"
+        "confirmEmail": "Email confirmation",
+        "signIn": "Sign in",
+        "signUp": "Registration"
       }
     },
     "chats": {
@@ -61,7 +67,7 @@
         "text1": "Server error"
       },
       "invalidCredentials": {
-        "text1": "Invalid username or password"
+        "text1": "Incorrect login or password"
       },
       "invalidPhotoType": {
         "text1": "Allowed photo types: {{allowedTypes}}"
@@ -71,14 +77,14 @@
         "text2": "Write soon"
       },
       "photoTooLarge": {
-        "text1": "Photo size must not exceed {{maxSize}}MB"
+        "text1": "Photo size should not exceed {{maxSize}}MB"
       },
       "rateLimitExceeded": {
         "text1": "Rate limit exceeded"
       },
       "unknownError": {
         "text1": "Something went wrong",
-        "text2": "Please try again later or contact support"
+        "text2": "Try again later or contact support"
       }
     },
     "profile": {
@@ -107,7 +113,7 @@
       "placeholder": {},
       "text": {
         "choosePhoto": "Choose photo",
-        "noPhotoChosen": "No photo chosen",
+        "noPhotoChosen": "No photo selected",
         "uploadError": "An error occurred while uploading files"
       },
       "title": {}

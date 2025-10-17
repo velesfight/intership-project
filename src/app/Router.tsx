@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router';
 
+import { ConfirmEmailPage } from '~/pages/ConfirmEmailPage';
 import { SignInPage } from '~/pages/SignInPage';
 import { SignUpPage } from '~/pages/SignUpPage';
 import { Route as Path } from '~/shared/constants/routes';
@@ -17,7 +18,7 @@ export const Router = () => (
           <Route path={Path.SignIn} element={<SignInPage />} />
           <Route path={Path.SignUp} element={<SignUpPage />} />
           <Route path={Path.Recover} element='Recover' />
-          <Route path={Path.Otp} element='OTP' />
+          <Route path={Path.Otp} element={<ConfirmEmailPage />} />
         </Route>
       </Route>
       <Route element={<AuthGuard access='private' />}>
