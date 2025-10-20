@@ -1,0 +1,28 @@
+.radioGroup {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.label {
+  display: flex;
+  padding: var(--space-16);
+  border-radius: var(--radius-20);
+  border: var(--border-1) solid var(--border-color-2);
+  gap: var(--space-4);
+  user-select: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active {
+  border-color: var(--primary);
+  border-width: var(--border-2);
+}

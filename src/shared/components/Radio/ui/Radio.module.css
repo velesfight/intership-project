@@ -1,0 +1,39 @@
+.radio {
+  border: var(--border-2) solid var(--border-color-2);
+  border-radius: 50%;
+  background-color: var(--background-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon {
+  transform: scale(1.35);
+  color: var(--white);
+}
+
+.input {
+  position: absolute;
+  opacity: 0;
+
+  &:checked + .radio {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+}
+
+.sm {
+  inline-size: 16px;
+  block-size: 16px;
+}
+
+.md {
+  inline-size: 20px;
+  block-size: 20px;
+}
+
+.lg {
+  inline-size: 24px;
+  block-size: 24px;
+}
