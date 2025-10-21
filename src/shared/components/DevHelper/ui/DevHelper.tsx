@@ -9,13 +9,11 @@ export const DevHelper = () => {
     if (import.meta.env.MODE == 'development' || import.meta.env.MODE == 'staging') {
       window._app = {
         ...window._app,
-        signOut: useSignOut,
+        signOut,
       };
 
       return () => {
-        if (window._app?.signOut === signOut) {
-          delete window._app;
-        }
+        delete window._app;
       };
     }
   }, [signOut]);
