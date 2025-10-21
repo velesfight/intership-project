@@ -25,7 +25,7 @@ export const Stepper: FC<StepperProps> = ({ steps, current, incomplete, classNam
               )}
             />
             <span className='hidden'>
-              {t('shared.text.progress', { current: i + 1, total: steps })}
+              {t('shared.label.progress', { current: i + 1, total: steps })}
             </span>
           </div>
         );
