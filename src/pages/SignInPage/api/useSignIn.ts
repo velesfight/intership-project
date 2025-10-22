@@ -11,7 +11,7 @@ export const useSignIn = () => {
   const { t } = useTranslation();
   return useMutation({
     mutationFn: (dto: SignInFields) => publicApi.authentication.authenticationControllerSignIn(dto),
-    onSuccess: ({ accessToken }) => {
+    onSuccess: ({ accessToken }: { accessToken: string }) => {
       setAuth(accessToken);
     },
     onError: (error) => {
