@@ -9,17 +9,14 @@ export const publicApi = axios.create({
   timeout: 1000,
 });
 
-export const privateApi = axios.create({
+export const api = axios.create({
   baseURL: BASE_URL,
   timeout: 1000,
 });
 
-privateApi.interceptors.request.use((config) => {
+api.interceptors.request.use((config) => {
   const user = useAppStore.getState().user;
-  if (!user.isAuthenticated) return config;
-  const now = Date.now();
-  if (user.tokenExpiry && now > user.tokenExpiry) {
-    clearAppStore();
+  if (!user.isAuthenticated) {
     return Promise.reject(new Error('Token expired'));
   }
 
@@ -27,7 +24,7 @@ privateApi.interceptors.request.use((config) => {
   return config;
 });
 
-privateApi.interceptors.response.use(
+api.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
