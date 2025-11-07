@@ -19,15 +19,12 @@ api.instance.interceptors.request.use(async (config) => {
   if (!user.isAuthenticated) {
     return config;
   }
-  const nowMs = Date.now();
-  if (user.tokenExpiry < nowMs) {
+  if (user.tokenExpiry < Date.now()) {
     clearAppStore();
-    window.location.href = '/sign‑in';
-    return Promise.reject(new Error('Access token expired'));
-  } else {
-    config.headers.Authorization = `Bearer ${user.accessToken}`;
-    return config;
+    throw new Error('Access token expired');
   }
+  config.headers.Authorization = `Bearer ${user.accessToken}`;
+  return config;
 });
 
 api.instance.interceptors.response.use(
@@ -35,8 +32,7 @@ api.instance.interceptors.response.use(
   (error) => {
     if (error.response?.status === HttpStatus.Unauthorized) {
       clearAppStore();
-      window.location.href = '/sign‑in';
-      return Promise.reject(error);
     }
+    throw error;
   },
 );
